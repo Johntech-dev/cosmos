@@ -41,12 +41,12 @@ const App = () => (
         <div className="pt-20">
           <Routes>
             <Route path="/" element={<Index />} />
-            {/* <Route path="/about" element={<About />} />
-            <Route path="/solutions" element={<Solutions />} />
+            <Route path="/about" element={<About />} />
+            {/* <Route path="/solutions" element={<Solutions />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/insights" element={<Insights />} />
-            <Route path="/contact" element={<Contact />} /> */}
-            <Route path="*" element={<NotFound />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} /> */}
           </Routes>
         </div>
         <Footer />
