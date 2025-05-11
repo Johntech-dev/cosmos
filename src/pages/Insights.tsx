@@ -3,9 +3,86 @@ import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, BookOpen, Clock, Users, FileText } from 'lucide-react';
+import ArticleCard from '@/components/ui/ArticleCard';
 
 const Insights = () => {
+  const featuredArticles = [
+    {
+      title: "The 4th CTPS: A Paradigm of Transformation",
+      excerpt: "What if time wasn't fixed—but fluid, adaptive, and alive? Explore how the 4th Cultural Time Perception Shift is reshaping how humans think, learn, collaborate, and thrive.",
+      author: "Dr. Elena Kazan",
+      date: "May 15, 2023",
+      category: "Research",
+      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      url: "#4th-ctps"
+    },
+    {
+      title: "Intelligence Amplification: Unlocking Human Potential",
+      excerpt: "What happens when technology doesn't replace you—but elevates you? Explore how IA is reshaping how we think, feel, create, and grow.",
+      author: "Marcus Chen",
+      date: "April 22, 2023",
+      category: "Technology",
+      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      url: "#intelligence-amplification"
+    },
+    {
+      title: "Designing for Human-Machine Synergy",
+      excerpt: "What if your machine didn't just serve you—but understood you? Learn how Cosmo Lab designs cybernetic ecosystems where humans and machines amplify each other's intelligence.",
+      author: "Dr. Sophia Williams",
+      date: "March 30, 2023",
+      category: "Design",
+      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      url: "#human-machine-synergy"
+    }
+  ];
+  
+  const additionalArticles = [
+    {
+      title: "Ethics in the Age of IA",
+      excerpt: "As technology becomes more intelligent, our responsibility must become more human. Explore how Cosmo Lab embeds ethics, data sovereignty, and cognitive agency into every layer of IA.",
+      url: "#ethics-in-ia",
+      category: "Ethics"
+    },
+    {
+      title: "Social Transformation Systems: From Fragmentation to Wholeness",
+      excerpt: "Hyper-connectivity has made us faster but not more unified. Discover how Cosmo Lab builds Social Transformation Systems to restore coherence and catalyze collective intelligence.",
+      url: "#social-transformation",
+      category: "Society"
+    }
+  ];
+  
+  const timelineEvents = [
+    {
+      era: "1st CTPS",
+      title: "Agricultural Revolution",
+      year: "10,000 BCE",
+      description: "Shift from nomadic hunter-gathering to seasonal time perception",
+      image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      era: "2nd CTPS",
+      title: "Industrial Revolution",
+      year: "1760s",
+      description: "Shift to mechanical time perception with clock-based scheduling",
+      image: "https://images.unsplash.com/photo-1618044733300-9472054094ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      era: "3rd CTPS",
+      title: "Digital Revolution",
+      year: "1980s",
+      description: "Shift to always-on connectivity and acceleration of experience",
+      image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    },
+    {
+      era: "4th CTPS",
+      title: "Intelligence Revolution",
+      year: "2020s",
+      description: "Shift to adaptive, fluid time perception aligned with cognitive states",
+      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+    }
+  ];
+
   return (
     <div className="min-h-screen">
       <HeroSection
@@ -32,266 +109,183 @@ const Insights = () => {
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "The Evolution of Intelligence Amplification: Beyond AI",
-                excerpt: "How the next generation of technologies will enhance human capabilities rather than replace them.",
-                author: "Dr. Elena Kazan",
-                date: "May 15, 2023",
-                category: "Research",
-                image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-                link: "#"
-              },
-              {
-                title: "Understanding the 4th Cultural Time Perception Shift",
-                excerpt: "A deep dive into how synchronized human-machine interaction is creating a new paradigm for collaboration.",
-                author: "Marcus Chen",
-                date: "April 22, 2023",
-                category: "Technology",
-                image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-                link: "#"
-              },
-              {
-                title: "The Ethics of Human-Centered Technology Development",
-                excerpt: "Exploring the principles that should guide the creation of technologies that augment human intelligence.",
-                author: "Dr. Sophia Williams",
-                date: "March 30, 2023",
-                category: "Ethics",
-                image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-                link: "#"
-              },
-            ].map((article, index) => (
-              <AnimatedSection key={article.title} delay={100 * index} className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                <div className="h-48 overflow-hidden">
-                  <img 
-                    src={article.image} 
-                    alt={article.title}
-                    className="w-full h-full object-cover object-center hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
-                <div className="p-6">
-                  <div className="flex items-center mb-3">
-                    <span className="bg-cosmo-blue/10 text-cosmo-blue text-sm font-medium px-3 py-1 rounded-full">
-                      {article.category}
-                    </span>
-                    <span className="text-gray-500 text-sm ml-auto">{article.date}</span>
-                  </div>
-                  <h3 className="text-xl font-semibold mb-3">
-                    <a href={article.link} className="hover:text-cosmo-blue transition-colors">
-                      {article.title}
-                    </a>
-                  </h3>
-                  <p className="text-gray-600 mb-4">{article.excerpt}</p>
-                  <div className="flex justify-between items-center">
-                    <span className="text-sm text-gray-500">By {article.author}</span>
-                    <a href={article.link} className="text-cosmo-blue font-medium inline-flex items-center group">
-                      Read more 
-                      <ArrowRight className="ml-1 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                    </a>
-                  </div>
-                </div>
-              </AnimatedSection>
+            {featuredArticles.map((article, index) => (
+              <ArticleCard 
+                key={article.title}
+                title={article.title}
+                excerpt={article.excerpt}
+                author={article.author}
+                date={article.date}
+                category={article.category}
+                image={article.image}
+                url={article.url}
+                delay={100 * index}
+              />
+            ))}
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            {additionalArticles.map((article, index) => (
+              <ArticleCard 
+                key={article.title}
+                title={article.title}
+                excerpt={article.excerpt}
+                category={article.category}
+                url={article.url}
+                delay={100 * (index + featuredArticles.length)}
+              />
             ))}
           </div>
         </section>
 
-        {/* Research Highlights */}
+        {/* 4th CTPS Interactive Timeline */}
         <section className="bg-gray-50 py-20">
           <div className="container mx-auto px-4 md:px-6">
             <AnimatedSection className="text-center mb-16">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Research <span className="text-cosmo-blue">Highlights</span>
+                4th CTPS <span className="text-cosmo-blue">Interactive Timeline</span>
               </h2>
               <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-                Explore our groundbreaking research in Intelligence Amplification and the 4th Cultural 
-                Time Perception Shift that's shaping the future of human-machine collaboration.
+                Explore the evolution of Cultural Time Perception Shifts throughout human history,
+                leading to our current transformative era.
               </p>
             </AnimatedSection>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
-              <AnimatedSection className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
-                <h3 className="text-2xl font-bold mb-4">Intelligence Amplification Research Lab</h3>
-                <p className="text-gray-600 mb-6">
-                  Our research lab focuses on developing technologies that enhance human cognitive abilities 
-                  through novel interfaces, adaptive systems, and collaborative AI frameworks.
-                </p>
-                <div className="mb-8">
-                  <h4 className="font-semibold mb-3">Key Research Areas:</h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
+            <div className="relative">
+              {/* Horizontal timeline line */}
+              <div className="absolute top-24 left-0 right-0 h-1 bg-cosmo-blue/30 hidden md:block"></div>
+              
+              <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                {timelineEvents.map((event, index) => (
+                  <AnimatedSection key={event.era} delay={100 * index}>
+                    <div className="bg-white rounded-lg shadow-lg overflow-hidden">
+                      <div className="h-40 overflow-hidden">
+                        <img 
+                          src={event.image} 
+                          alt={event.title}
+                          className="w-full h-full object-cover object-center"
+                        />
                       </div>
-                      <p>Cognitive enhancement through human-AI collaboration</p>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
+                      <div className="p-6">
+                        <div className="flex justify-between items-center mb-3">
+                          <span className="bg-cosmo-blue/10 text-cosmo-blue text-sm font-medium px-3 py-1 rounded-full">
+                            {event.era}
+                          </span>
+                          <span className="text-gray-500 text-sm">{event.year}</span>
+                        </div>
+                        <h3 className="text-xl font-semibold mb-2">{event.title}</h3>
+                        <p className="text-gray-600">{event.description}</p>
                       </div>
-                      <p>Adaptive interfaces that respond to cognitive states</p>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
-                      </div>
-                      <p>Human-guided machine learning frameworks</p>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
-                      </div>
-                      <p>Measuring and enhancing cognitive performance</p>
-                    </li>
-                  </ul>
-                </div>
-                <Button 
-                  asChild
-                  className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
-                >
-                  <a href="/research/ia-lab">Explore Research Papers</a>
-                </Button>
-              </AnimatedSection>
-
-              <AnimatedSection delay={200} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
-                <h3 className="text-2xl font-bold mb-4">4th CTPS Innovation Center</h3>
-                <p className="text-gray-600 mb-6">
-                  Our innovation center focuses on developing technologies that synchronize human 
-                  perception with machine processing, creating new paradigms for collaboration in 
-                  mission-critical environments.
-                </p>
-                <div className="mb-8">
-                  <h4 className="font-semibold mb-3">Key Research Areas:</h4>
-                  <ul className="space-y-2 text-gray-700">
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
-                      </div>
-                      <p>Temporal perception alignment frameworks</p>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
-                      </div>
-                      <p>Real-time feedback systems for human-machine teams</p>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
-                      </div>
-                      <p>Cognitive load management in high-stakes environments</p>
-                    </li>
-                    <li className="flex items-start">
-                      <div className="flex-shrink-0 mr-2 mt-1">
-                        <div className="w-2 h-2 rounded-full bg-cosmo-blue"></div>
-                      </div>
-                      <p>Cultural adaptation to accelerated decision cycles</p>
-                    </li>
-                  </ul>
-                </div>
-                <Button 
-                  asChild
-                  className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
-                >
-                  <a href="/research/ctps-center">View Innovation Projects</a>
-                </Button>
-              </AnimatedSection>
+                    </div>
+                  </AnimatedSection>
+                ))}
+              </div>
+            </div>
+            
+            <div className="text-center mt-10">
+              <Button 
+                asChild
+                className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
+              >
+                <a href="#4th-ctps">Read More About the 4th CTPS</a>
+              </Button>
             </div>
           </div>
         </section>
 
-        {/* Events & Webinars */}
+        {/* Resource Library */}
         <section className="container mx-auto px-4 md:px-6 py-20">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
-              Upcoming <span className="text-cosmo-blue">Events & Webinars</span>
+              Resource <span className="text-cosmo-blue">Library</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Join us for discussions on the latest developments in Intelligence Amplification,
-              the 4th Cultural Time Perception Shift, and the future of human-machine collaboration.
+              Access in-depth research papers, white papers, keynote recordings, and frequently asked questions
+              about our technologies and methodologies.
             </p>
           </AnimatedSection>
 
-          <div className="space-y-6">
-            {[
-              {
-                title: "The Future of Intelligence Amplification in Healthcare",
-                date: "June 15, 2023",
-                time: "10:00 AM - 11:30 AM PT",
-                type: "Webinar",
-                speakers: ["Dr. Elena Kazan", "Dr. Robert Chen, Stanford Medicine"],
-                link: "#"
-              },
-              {
-                title: "4th CTPS Applications in High-Risk Environments",
-                date: "July 8, 2023",
-                time: "9:00 AM - 4:00 PM PT",
-                type: "Conference",
-                speakers: ["Marcus Chen", "Dr. Sarah Williams, MIT Media Lab", "Col. James Robertson, USAF"],
-                link: "#"
-              },
-              {
-                title: "Ethics and Governance of Human-Machine Collaboration",
-                date: "July 22, 2023",
-                time: "11:00 AM - 12:30 PM PT",
-                type: "Panel Discussion",
-                speakers: ["Dr. Sophia Williams", "Prof. Maria Garcia, Harvard Kennedy School", "Dr. Michael Chang, EFF"],
-                link: "#"
-              },
-            ].map((event, index) => (
-              <AnimatedSection key={event.title} delay={100 * index}>
-                <div className="bg-white rounded-lg shadow-lg border border-gray-100 overflow-hidden hover:shadow-xl transition-shadow">
-                  <div className="flex flex-col md:flex-row">
-                    <div className="bg-cosmo-blue p-6 md:w-48 flex flex-col items-center justify-center text-white">
-                      <span className="text-sm font-medium uppercase tracking-wider">{event.type}</span>
-                      <div className="text-2xl font-bold mt-2">{event.date.split(',')[0]}</div>
-                    </div>
-                    <div className="p-6 md:p-8 flex-1">
-                      <h3 className="text-xl font-semibold mb-2">
-                        <a href={event.link} className="hover:text-cosmo-blue transition-colors">
-                          {event.title}
-                        </a>
-                      </h3>
-                      <div className="flex flex-wrap items-center text-sm text-gray-500 mb-4">
-                        <span className="mr-4">{event.date}</span>
-                        <span>{event.time}</span>
-                      </div>
-                      <div className="mb-6">
-                        <h4 className="text-sm font-medium text-gray-500 mb-2">Speakers:</h4>
-                        <div className="flex flex-wrap gap-2">
-                          {event.speakers.map(speaker => (
-                            <span key={speaker} className="bg-gray-100 text-gray-700 text-sm px-3 py-1 rounded-full">
-                              {speaker}
-                            </span>
-                          ))}
-                        </div>
-                      </div>
-                      <div className="flex justify-between items-center">
-                        <Button 
-                          asChild
-                          variant="outline" 
-                          className="border-cosmo-blue text-cosmo-blue hover:bg-cosmo-blue hover:text-white"
-                        >
-                          <a href={event.link}>Register Now</a>
-                        </Button>
-                        <a href={event.link} className="text-cosmo-blue font-medium inline-flex items-center group">
-                          Learn more 
-                          <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+            <AnimatedSection className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+              <div className="flex items-center mb-6">
+                <div className="bg-cosmo-blue/10 p-3 rounded-full">
+                  <FileText className="h-6 w-6 text-cosmo-blue" />
                 </div>
-              </AnimatedSection>
-            ))}
-          </div>
-
-          <div className="text-center mt-10">
-            <Button 
-              asChild
-              className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
-            >
-              <a href="/events">View All Events</a>
-            </Button>
+                <h3 className="text-2xl font-semibold ml-4">White Papers</h3>
+              </div>
+              <p className="text-gray-600 mb-6">
+                Procurement-friendly deep dives into our technologies, methodologies, and research findings.
+                Perfect for technical teams and decision-makers.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">The Future of Intelligence Amplification (PDF)</a>
+                </li>
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">4th CTPS: Technical Implementation Guide (PDF)</a>
+                </li>
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Evergreen Protocol: Ethics Framework (PDF)</a>
+                </li>
+              </ul>
+            </AnimatedSection>
+            
+            <AnimatedSection delay={100} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+              <div className="flex items-center mb-6">
+                <div className="bg-cosmo-blue/10 p-3 rounded-full">
+                  <BookOpen className="h-6 w-6 text-cosmo-blue" />
+                </div>
+                <h3 className="text-2xl font-semibold ml-4">Keynote Recordings</h3>
+              </div>
+              <p className="text-gray-600 mb-6">
+                Executive summaries and presentations from our researchers and leadership team on
+                the latest developments in IA and 4th CTPS.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Human-Machine Synergy (Video + Slides)</a>
+                </li>
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">The Future of Work in the 4th CTPS (Video)</a>
+                </li>
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Ethics in the Age of IA (Slides)</a>
+                </li>
+              </ul>
+            </AnimatedSection>
+            
+            <AnimatedSection delay={200} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100">
+              <div className="flex items-center mb-6">
+                <div className="bg-cosmo-blue/10 p-3 rounded-full">
+                  <Users className="h-6 w-6 text-cosmo-blue" />
+                </div>
+                <h3 className="text-2xl font-semibold ml-4">FAQ</h3>
+              </div>
+              <p className="text-gray-600 mb-6">
+                Frequently asked questions about our technologies, methodologies, and implementation process.
+                Updated quarterly with the latest information.
+              </p>
+              <ul className="space-y-3">
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Intelligence Amplification FAQ</a>
+                </li>
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Implementation & Integration FAQ</a>
+                </li>
+                <li className="flex items-center">
+                  <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
+                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Data Privacy & Security FAQ</a>
+                </li>
+              </ul>
+            </AnimatedSection>
           </div>
         </section>
 
@@ -320,6 +314,75 @@ const Insights = () => {
               </AnimatedSection>
             </div>
           </div>
+        </section>
+
+        {/* Blog Post Preview */}
+        <section id="4th-ctps" className="container mx-auto px-4 md:px-6 py-20">
+          <AnimatedSection className="max-w-4xl mx-auto mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
+              The 4th Cultural Time Perception Shift: <span className="text-cosmo-blue">A Paradigm of Transformation</span>
+            </h2>
+            
+            <div className="flex items-center justify-center mb-8">
+              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" 
+                  alt="Dr. Elena Kazan"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div>
+                <p className="font-medium">Dr. Elena Kazan</p>
+                <p className="text-sm text-gray-500">May 15, 2023 • 8 min read</p>
+              </div>
+            </div>
+            
+            <div className="prose prose-lg max-w-none">
+              <p className="lead">
+                What if time wasn't fixed—but fluid, adaptive, and alive? The 4th Cultural Time Perception Shift (4th CTPS) 
+                is reshaping how humans think, learn, collaborate, and thrive. Explore how Cosmo Lab is leading this transformation 
+                with adaptive systems, cognitive mirroring, and a new era of resilience.
+              </p>
+              
+              <h3>Introduction: A New Epoch of Perception</h3>
+              <p>
+                We live not just in an era of exponential technology, but of temporal transformation. Time itself is evolving—no 
+                longer merely measured in hours and minutes but experienced, interpreted, and designed. The 4th CTPS isn't a metaphor. 
+                It's a cognitive and cultural reconfiguration that is reshaping how humans relate to change, challenge, creativity, 
+                and consciousness.
+              </p>
+              <p>
+                At Cosmo Lab, we recognize the 4th CTPS as a paradigm of becoming. It's about aligning with the deeper rhythms of 
+                human neurocognition, emotional intelligence, and ecological co-adaptation—designing lives, organizations, and 
+                cultures that thrive by mirroring the fluidity of time itself.
+              </p>
+              
+              <h3>From Linear to Fluid Time</h3>
+              <p>
+                For centuries, human civilization was structured by linear time—agricultural seasons, industrial schedules, academic 
+                years. This linearity brought order, but it also created rigidity, burnout, and a cultural intolerance for uncertainty.
+              </p>
+              <p>The 4th CTPS invites a shift:</p>
+              <ul>
+                <li>From rigid sequences to dynamic flow</li>
+                <li>From clock-based optimization to attention-based optimization</li>
+                <li>From "time management" to time perception mastery</li>
+              </ul>
+              <p>
+                In a world of constant change, resilience is no longer about holding the line. It's about dancing with complexity, 
+                attuning to new signals, and responding from presence rather than panic. This is what fluid time perception makes possible.
+              </p>
+              
+              <div className="text-center my-10">
+                <Button 
+                  asChild
+                  className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
+                >
+                  <a href="/insights/4th-ctps-paradigm">Read Full Article</a>
+                </Button>
+              </div>
+            </div>
+          </AnimatedSection>
         </section>
       </div>
     </div>

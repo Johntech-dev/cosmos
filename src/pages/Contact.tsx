@@ -11,11 +11,11 @@ const Contact = () => {
       <HeroSection
         title={
           <>
-            Get in <span className="text-gradient">Touch</span>
+            Connect with <span className="text-gradient">Cosmo Lab</span>
           </>
         }
         subtitle="Contact Us"
-        description="Have questions about our solutions or research? Our team is ready to help."
+        description="Use the secure form or direct lines below for RFPs, pilots, and strategic engagements."
       />
 
       <div id="content" className="py-20">
@@ -73,7 +73,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-1">
-                    Organization
+                    Organisation Name & Type
                   </label>
                   <input
                     type="text"
@@ -85,7 +85,7 @@ const Contact = () => {
                 
                 <div>
                   <label htmlFor="topic" className="block text-sm font-medium text-gray-700 mb-1">
-                    How can we help you?*
+                    Project Scope / Brief*
                   </label>
                   <select
                     id="topic"
@@ -104,16 +104,48 @@ const Contact = () => {
                 </div>
                 
                 <div>
+                  <label htmlFor="security" className="block text-sm font-medium text-gray-700 mb-1">
+                    Compliance or Security Requirements
+                  </label>
+                  <textarea
+                    id="security"
+                    name="security"
+                    rows={2}
+                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
+                  ></textarea>
+                </div>
+                
+                <div>
                   <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
                     Message*
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    rows={5}
+                    rows={4}
                     className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
                     required
                   ></textarea>
+                </div>
+                
+                <div>
+                  <label htmlFor="contact_method" className="block text-sm font-medium text-gray-700 mb-1">
+                    Preferred Contact Method*
+                  </label>
+                  <div className="flex flex-wrap gap-4">
+                    <label className="flex items-center">
+                      <input type="radio" name="contact_method" value="email" className="mr-2" />
+                      Email
+                    </label>
+                    <label className="flex items-center">
+                      <input type="radio" name="contact_method" value="phone" className="mr-2" />
+                      Phone
+                    </label>
+                    <label className="flex items-center">
+                      <input type="radio" name="contact_method" value="video" className="mr-2" />
+                      Video Call
+                    </label>
+                  </div>
                 </div>
                 
                 <div className="flex items-center">
@@ -140,8 +172,24 @@ const Contact = () => {
             
             <AnimatedSection delay={200} className="w-full lg:w-1/2">
               <div className="bg-gray-50 p-8 rounded-lg mb-8">
-                <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
+                <h3 className="text-2xl font-semibold mb-6">Direct Access</h3>
                 <div className="space-y-6">
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mr-4">
+                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
+                        <Mail className="h-6 w-6 text-cosmo-blue" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Email</h4>
+                      <p className="text-gray-600">
+                        <a href="mailto:connect@cosmolab.cc" className="hover:text-cosmo-blue transition-colors">
+                          connect@cosmolab.cc
+                        </a>
+                      </p>
+                    </div>
+                  </div>
+                  
                   <div className="flex items-start">
                     <div className="flex-shrink-0 mr-4">
                       <div className="bg-cosmo-blue/10 p-3 rounded-full">
@@ -169,22 +217,6 @@ const Contact = () => {
                       <p className="text-gray-600">
                         <a href="tel:+18005551234" className="hover:text-cosmo-blue transition-colors">
                           +1 (800) 555-1234
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mr-4">
-                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
-                        <Mail className="h-6 w-6 text-cosmo-blue" />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Email</h4>
-                      <p className="text-gray-600">
-                        <a href="mailto:info@cosmolab.com" className="hover:text-cosmo-blue transition-colors">
-                          info@cosmolab.com
                         </a>
                       </p>
                     </div>
@@ -222,6 +254,32 @@ const Contact = () => {
           </div>
         </div>
       </div>
+      
+      <section className="bg-gray-50 py-10">
+        <div className="container mx-auto px-4 md:px-6">
+          <div className="max-w-6xl mx-auto">
+            <AnimatedSection>
+              <div className="flex flex-wrap justify-center gap-8 text-center">
+                <div>
+                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Cosmo Lab Corporate Site Map</a>
+                </div>
+                <div>
+                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Cosmo Agent Program</a>
+                </div>
+                <div>
+                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Privacy</a>
+                </div>
+                <div>
+                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Terms</a>
+                </div>
+                <div>
+                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Evergreen Protocol</a>
+                </div>
+              </div>
+            </AnimatedSection>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };

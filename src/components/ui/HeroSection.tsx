@@ -10,6 +10,10 @@ interface HeroSectionProps {
   description?: string;
   buttonText?: string;
   buttonUrl?: string;
+  secondaryButtonText?: string;
+  secondaryButtonUrl?: string;
+  tertiaryButtonText?: string;
+  tertiaryButtonUrl?: string;
   backgroundImage?: string;
   className?: string;
   overlayClassName?: string;
@@ -21,6 +25,10 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   description,
   buttonText,
   buttonUrl = '#',
+  secondaryButtonText,
+  secondaryButtonUrl,
+  tertiaryButtonText,
+  tertiaryButtonUrl,
   backgroundImage,
   className,
   overlayClassName,
@@ -64,20 +72,43 @@ const HeroSection: React.FC<HeroSectionProps> = ({
         </h1>
         {description && (
           <p 
-            className="max-w-2xl mx-auto text-lg text-gray-300 mb-8 animate-fade-in" 
+            className="max-w-3xl mx-auto text-lg text-gray-300 mb-8 animate-fade-in" 
             style={{animationDelay: '0.4s'}}
           >
             {description}
           </p>
         )}
-        {buttonText && (
-          <div className="animate-fade-in" style={{animationDelay: '0.6s'}}>
-            <Button 
-              asChild
-              className="bg-cosmo-blue hover:bg-cosmo-blue-light text-white px-8 py-6 text-lg rounded-md shadow-glow"
-            >
-              <a href={buttonUrl}>{buttonText}</a>
-            </Button>
+        
+        {(buttonText || secondaryButtonText || tertiaryButtonText) && (
+          <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{animationDelay: '0.6s'}}>
+            {buttonText && (
+              <Button 
+                asChild
+                className="bg-cosmo-blue hover:bg-cosmo-blue-light text-white px-6 py-6 text-lg rounded-md shadow-glow"
+              >
+                <a href={buttonUrl}>{buttonText}</a>
+              </Button>
+            )}
+            
+            {secondaryButtonText && (
+              <Button 
+                asChild
+                variant="outline" 
+                className="border-white text-white hover:bg-white/10 px-6 py-6 text-lg"
+              >
+                <a href={secondaryButtonUrl}>{secondaryButtonText}</a>
+              </Button>
+            )}
+            
+            {tertiaryButtonText && (
+              <Button 
+                asChild
+                variant="ghost" 
+                className="text-cosmo-blue-light hover:bg-cosmo-blue-dark/50 px-6 py-6 text-lg"
+              >
+                <a href={tertiaryButtonUrl}>{tertiaryButtonText}</a>
+              </Button>
+            )}
           </div>
         )}
       </div>

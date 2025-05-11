@@ -3,81 +3,55 @@ import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, Zap, Globe, Star } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
+import FeatureHighlight from '@/components/ui/FeatureHighlight';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
       <HeroSection
-        title={
-          <>
-            Pioneering <span className="text-gradient">Intelligence Amplification</span> for Human Advancement
-          </>
-        }
-        subtitle="Welcome to Cosmo Lab"
-        description="We create synergy between humans and machines, amplifying capabilities without replacing expertise. Pioneering the 4th Cultural Time Perception Shift."
-        buttonText="Discover Our Solutions"
+        title="Mind, Machines & the 4th Cultural Time Perception Shift"
+        subtitle="Redefining the Future of Resilient Intelligence for Enterprise & Government Leaders"
+        description="Cosmo Lab pioneers Intelligence Amplification (IA)—technology that augments, rather than replaces, human expertise. By harnessing the 4th Cultural Time Perception Shift (4th CTPS), we synchronise people, machines, and critical systems in real time, driving mission-ready performance and ethical innovation."
+        buttonText="Explore Solutions"
         buttonUrl="/solutions"
+        secondaryButtonText="Read Insights"
+        secondaryButtonUrl="/insights"
+        tertiaryButtonText="Talk to Our Team"
+        tertiaryButtonUrl="/contact"
       />
 
       <div id="content" className="py-20">
-        {/* Feature Section */}
+        {/* Executive Highlights Section */}
         <section className="container mx-auto px-4 md:px-6 py-16">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              The Future of <span className="text-cosmo-blue">Human-Machine Collaboration</span>
+              Why 4th CTPS Matters — <span className="text-cosmo-blue">Executive Highlights</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              At Cosmo Lab, we're redefining the relationship between people and technology, creating solutions that enhance human capabilities.
+              Discover how our groundbreaking approach can transform your organization's performance and resilience.
             </p>
           </AnimatedSection>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <AnimatedSection delay={100} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-cosmo-blue/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Zap className="h-8 w-8 text-cosmo-blue" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Intelligence Amplification</h3>
-              <p className="text-gray-600 mb-6">
-                Enhancing human expertise with technology that augments rather than replaces, creating superior outcomes through collaboration.
-              </p>
-              <a href="/solutions" className="text-cosmo-blue font-medium inline-flex items-center group">
-                Learn more 
-                <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-              </a>
-            </AnimatedSection>
-
-            <AnimatedSection delay={200} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-cosmo-blue/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Globe className="h-8 w-8 text-cosmo-blue" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">4th Cultural Time Perception Shift</h3>
-              <p className="text-gray-600 mb-6">
-                Pioneering synchronization technologies that realign human perception and machine processing for transformative results.
-              </p>
-              <a href="/solutions" className="text-cosmo-blue font-medium inline-flex items-center group">
-                Learn more 
-                <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-              </a>
-            </AnimatedSection>
-
-            <AnimatedSection delay={300} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
-              <div className="bg-cosmo-blue/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
-                <Star className="h-8 w-8 text-cosmo-blue" />
-              </div>
-              <h3 className="text-xl font-semibold mb-3">Ethical Innovation</h3>
-              <p className="text-gray-600 mb-6">
-                Creating mission-ready technologies that uphold human values and ethics while delivering exceptional performance.
-              </p>
-              <a href="/solutions" className="text-cosmo-blue font-medium inline-flex items-center group">
-                Learn more 
-                <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
-              </a>
-            </AnimatedSection>
+            <FeatureHighlight 
+              title="Intelligence Amplification"
+              description="Elevate decision-quality and cognitive throughput across complex operations."
+            />
+            
+            <FeatureHighlight 
+              title="Human–Machine Synergy"
+              description="Deploy cyber-ecological toolkits that learn, adapt, and cooperate with staff in real time."
+            />
+            
+            <FeatureHighlight 
+              title="Evergreen Protocol (Ethics)"
+              description="Guarantee data sovereignty, sustainability, and compliance from day one."
+            />
           </div>
         </section>
 
-        {/* About Preview Section */}
+        {/* Strategic Advantage Section */}
         <section className="bg-gray-50 py-20">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row items-center gap-12">
@@ -87,7 +61,7 @@ const Index = () => {
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
                       src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlY2hub2xvZ3klMjB0ZWFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=80" 
-                      alt="Cosmo Lab Team"
+                      alt="Strategic Advantage"
                       className="w-full h-auto object-cover"
                     />
                   </div>
@@ -96,21 +70,69 @@ const Index = () => {
 
               <AnimatedSection delay={200} className="w-full md:w-1/2">
                 <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                  About <span className="text-cosmo-blue">Cosmo Lab</span>
+                  Strategic <span className="text-cosmo-blue">Advantage</span>
                 </h2>
                 <p className="text-gray-600 mb-6">
-                  Founded with a vision to redefine the human-machine relationship, Cosmo Lab is at the forefront of creating technologies that amplify human capabilities rather than replacing them.
+                  In today's rapidly evolving landscape, organizations face unprecedented challenges in maintaining cognitive resilience while adapting to accelerating change. Our Intelligence Amplification technologies provide a strategic advantage by enhancing human capabilities rather than replacing them.
                 </p>
                 <p className="text-gray-600 mb-8">
-                  Our pioneering work in Intelligence Amplification (IA) and the 4th Cultural Time Perception Shift (4th CTPS) is creating a new paradigm for ethical innovation in the digital age.
+                  By harnessing the power of the 4th Cultural Time Perception Shift, we create synchronized ecosystems where human expertise and machine processing work in harmony, delivering superior outcomes across complex operations.
                 </p>
                 <Button 
                   asChild
                   className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
                 >
-                  <a href="/about">Learn More About Us</a>
+                  <a href="/solutions">Discover Our Solutions</a>
                 </Button>
               </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* What It Means For You Section */}
+        <section className="py-20">
+          <div className="container mx-auto px-4 md:px-6">
+            <AnimatedSection className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4">
+                What It Means <span className="text-cosmo-blue">For You</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Our technologies deliver tangible benefits across your organization, creating resilient systems that adapt to changing conditions while amplifying human potential.
+              </p>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[
+                {
+                  title: "Enhanced Decision Making",
+                  description: "Leverage real-time cognitive dashboards that provide strategic options while preserving human judgment."
+                },
+                {
+                  title: "Reduced Cognitive Fatigue",
+                  description: "Adaptive interfaces that respond to operator stress and workload, preventing burnout and maintaining peak performance."
+                },
+                {
+                  title: "Mission-Ready Performance",
+                  description: "Synchronize people, machines, and critical systems for zero-downtime operations and superior outcomes."
+                },
+                {
+                  title: "Ethical Innovation",
+                  description: "Built on our Evergreen Protocol, ensuring data sovereignty, sustainability, and compliance from day one."
+                },
+                {
+                  title: "Cultural Transformation",
+                  description: "Drive organizational coherence with Mirror Reality Analytics for enhanced collaboration and alignment."
+                },
+                {
+                  title: "Future-Proofed Strategy",
+                  description: "Develop adaptive frameworks that evolve with your organization, ensuring sustainable growth and resilience."
+                }
+              ].map((feature, index) => (
+                <AnimatedSection key={feature.title} delay={100 * index} className="bg-white p-8 rounded-lg shadow-lg border border-gray-100 hover:shadow-xl transition-shadow">
+                  <h3 className="text-xl font-semibold mb-3 text-cosmo-blue">{feature.title}</h3>
+                  <p className="text-gray-600">{feature.description}</p>
+                </AnimatedSection>
+              ))}
             </div>
           </div>
         </section>
@@ -119,16 +141,25 @@ const Index = () => {
         <section className="py-24 bg-gradient-to-r from-cosmo-blue-dark to-cosmo-blue text-white">
           <div className="container mx-auto px-4 md:px-6 text-center">
             <AnimatedSection>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Amplify Your Potential?</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Organization?</h2>
               <p className="text-xl max-w-3xl mx-auto mb-8 text-gray-100">
-                Join us in creating a future where human expertise and machine capabilities work in harmony.
+                Discover how our Intelligence Amplification and 4th CTPS technologies can create a strategic advantage for your team.
               </p>
-              <Button 
-                asChild
-                className="bg-white text-cosmo-blue hover:bg-gray-100 shadow-glow"
-              >
-                <a href="/contact">Get in Touch</a>
-              </Button>
+              <div className="flex flex-col sm:flex-row justify-center gap-4">
+                <Button 
+                  asChild
+                  className="bg-white text-cosmo-blue hover:bg-gray-100 shadow-glow"
+                >
+                  <a href="/solutions">Explore Solutions</a>
+                </Button>
+                <Button 
+                  asChild 
+                  variant="outline" 
+                  className="border-white text-white hover:bg-white/10"
+                >
+                  <a href="/contact">Talk to Our Team</a>
+                </Button>
+              </div>
             </AnimatedSection>
           </div>
         </section>
