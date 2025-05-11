@@ -3,7 +3,8 @@ import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
 
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -16,6 +17,17 @@ import NotFound from "./pages/NotFound";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 
+// ScrollToTop component that will scroll to top on route changes
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+  
+  return null;
+};
+
 const queryClient = new QueryClient();
 
 const App = () => (
@@ -25,6 +37,7 @@ const App = () => (
       <Sonner />
       <BrowserRouter>
         <Navbar />
+        <ScrollToTop />
         <div className="pt-20"> {/* Adding padding for fixed navbar */}
           <Routes>
             <Route path="/" element={<Index />} />

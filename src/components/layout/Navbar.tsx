@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -68,9 +67,6 @@ const Navbar = () => {
                 {link.name}
               </Link>
             ))}
-            <Button className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white rounded-md glow-effect">
-              Get Started
-            </Button>
           </div>
           
           {/* Mobile Navigation Toggle */}
@@ -105,11 +101,6 @@ const Navbar = () => {
                   {link.name}
                 </Link>
               ))}
-              <div className="pt-4">
-                <Button className="w-full bg-cosmo-blue hover:bg-cosmo-blue-dark text-white rounded-md glow-effect">
-                  Get Started
-                </Button>
-              </div>
             </div>
           </div>
         )}
