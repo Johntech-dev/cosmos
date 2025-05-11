@@ -8,7 +8,12 @@ const Footer = () => {
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <Link to="/" className="flex items-center mb-6">
+            <Link to="/" className="flex items-center gap-2 mb-6">
+            <img 
+              src="/logo.png" 
+              alt="COSMOLAB Logo" 
+              className="h-10 w-auto text-white"
+            />
               <span className="text-2xl font-bold text-white">COSMO<span className="text-cosmo-blue-light">LAB</span></span>
             </Link>
             <p className="text-sm text-gray-300 mb-6 max-w-xs">
