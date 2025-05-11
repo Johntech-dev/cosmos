@@ -94,7 +94,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <Button 
                 asChild
                 variant="outline" 
-                className="border-white text-white hover:bg-white/10 px-6 py-6 text-lg"
+                className="border-white text-white bg-white/10 px-6 py-6 text-lg"
               >
                 <a href={secondaryButtonUrl}>{secondaryButtonText}</a>
               </Button>
@@ -104,7 +104,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
               <Button 
                 asChild
                 variant="ghost" 
-                className="text-cosmo-blue-light hover:bg-cosmo-blue-dark/50 px-6 py-6 text-lg"
+                className="text-cosmo-blue-light px-6 py-6 text-lg"
               >
                 <a href={tertiaryButtonUrl}>{tertiaryButtonText}</a>
               </Button>

@@ -38,15 +38,14 @@ const App = () => (
       <BrowserRouter>
         <Navbar />
         <ScrollToTop />
-        <div className="pt-20"> {/* Adding padding for fixed navbar */}
+        <div className="pt-20">
           <Routes>
             <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
+            {/* <Route path="/about" element={<About />} />
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/industries" element={<Industries />} />
             <Route path="/insights" element={<Insights />} />
-            <Route path="/contact" element={<Contact />} />
-            {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+            <Route path="/contact" element={<Contact />} /> */}
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

@@ -155,7 +155,7 @@ const Index = () => {
                 <Button 
                   asChild 
                   variant="outline" 
-                  className="border-white text-white hover:bg-white/10"
+                  className="border-white text-white bg-white/10"
                 >
                   <a href="/contact">Talk to Our Team</a>
                 </Button>

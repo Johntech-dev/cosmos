@@ -61,7 +61,7 @@ const Footer = () => {
                 <a href="tel:+18005551234" className="hover:text-cosmo-blue-light transition-colors">+1 (800) 555-1234</a>
               </p>
               <p>
-                <a href="mailto:info@cosmolab.com" className="hover:text-cosmo-blue-light transition-colors">info@cosmolab.com</a>
+                <a href="mailto:info@cosmolab.com" className="hover:text-cosmo-blue-light transition-colors">connect@cosmolab.cc</a>
               </p>
             </address>
           </div>
