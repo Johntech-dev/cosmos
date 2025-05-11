@@ -99,13 +99,19 @@ const About = () => {
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {[
               {
                 name: "Dr. Elena Kazan",
                 title: "Founder & CEO",
                 image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
                 bio: "Former MIT professor with 20+ years experience in AI and human-computer interaction."
+              },
+              {
+                name: "Dr. Michael Zhang",
+                title: "Co-founder & CSO",
+                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+                bio: "Neuroscientist specializing in cognitive enhancement and temporal intelligence systems."
               },
               {
                 name: "Marcus Chen",
