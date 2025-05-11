@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
@@ -52,8 +51,13 @@ const Navbar = () => {
     >
       <div className="container mx-auto px-4 md:px-6">
         <nav className="flex items-center justify-between">
-          <Link to="/" className="flex items-center" onClick={closeMenu}>
-            <span className="text-2xl font-bold text-cosmo-blue-dark">COSMO<span className="text-cosmo-blue">LAB</span></span>
+          <Link to="/" className="flex items-center gap-2" onClick={closeMenu}>
+            <img 
+              src="/logo.png" 
+              alt="COSMOLAB Logo" 
+              className="h-10 w-auto"
+            />
+             <span className="text-2xl font-bold text-cosmo-blue-dark">COSMO<span className="text-cosmo-blue">LAB</span></span>
           </Link>
           
           {/* Desktop Navigation */}
