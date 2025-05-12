@@ -3,8 +3,9 @@ import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowDown } from 'lucide-react';
+import { ArrowDown, Vision, Target, Rocket } from 'lucide-react';
 import FeatureTable from '@/components/ui/FeatureTable';
+import FeatureHighlight from '@/components/ui/FeatureHighlight';
 
 const About = () => {
   return (
@@ -87,63 +88,84 @@ const About = () => {
           </div>
         </section>
 
-        {/* Leadership Team Section - Using existing code from the original About page */}
+        {/* Vision for the Future Section - New Section */}
         <section className="container mx-auto px-4 md:px-6 py-20">
           <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Our <span className="text-cosmo-blue">Leadership Team</span>
+              Vision for the <span className="text-cosmo-blue">Future</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              A diverse group of visionaries, scientists, and technologists united by a shared mission to 
-              redefine human-machine collaboration.
+              We see a world where adaptive intelligence elevates human potential while balancing technological advancement with environmental stewardship.
             </p>
           </AnimatedSection>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[
-              {
-                name: "Dr. Elena Kazan",
-                title: "Founder & CEO",
-                image: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80",
-                bio: "Former MIT professor with 20+ years experience in AI and human-computer interaction."
-              },
-              {
-                name: "Dr. Michael Zhang",
-                title: "Co-founder & CSO",
-                image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
-                bio: "Neuroscientist specializing in cognitive enhancement and temporal intelligence systems."
-              },
-              {
-                name: "Marcus Chen",
-                title: "Chief Technology Officer",
-                image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-                bio: "Technology innovator with a background in quantum computing and neural interfaces."
-              },
-              {
-                name: "Dr. Sophia Williams",
-                title: "Chief Research Officer",
-                image: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=461&q=80",
-                bio: "Pioneering researcher in cognitive enhancement and temporal perception technologies."
-              },
-            ].map((person, index) => (
-              <AnimatedSection key={person.name} delay={100 * index}>
-                <div className="bg-white rounded-lg overflow-hidden shadow-lg hover:shadow-xl transition-shadow">
-                  <div className="h-60 overflow-hidden">
-                    <img 
-                      src={person.image} 
-                      alt={person.name}
-                      className="w-full h-full object-cover object-center"
-                    />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            <AnimatedSection delay={100}>
+              <div className="p-8 bg-gradient-to-br from-white to-blue-50 rounded-lg shadow-lg border border-gray-100 h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-cosmo-blue/10 rounded-full mr-4">
+                    <Vision className="h-6 w-6 text-cosmo-blue" />
                   </div>
-                  <div className="p-6">
-                    <h3 className="text-xl font-semibold mb-1">{person.name}</h3>
-                    <p className="text-cosmo-blue font-medium mb-3">{person.title}</p>
-                    <p className="text-gray-600">{person.bio}</p>
-                  </div>
+                  <h3 className="text-xl font-semibold">Cognitive Evolution</h3>
                 </div>
-              </AnimatedSection>
-            ))}
+                <p className="text-gray-600 flex-grow">
+                  By 2030, our technologies will enable a 40% enhancement in human decision-making capacity through seamless human-AI collaboration without compromising individual agency.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={200}>
+              <div className="p-8 bg-gradient-to-br from-white to-purple-50 rounded-lg shadow-lg border border-gray-100 h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-cosmo-blue/10 rounded-full mr-4">
+                    <Target className="h-6 w-6 text-cosmo-blue" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Adaptive Systems</h3>
+                </div>
+                <p className="text-gray-600 flex-grow">
+                  Creating organizational frameworks that dynamically adjust to emerging challenges, improving resilience by 60% while reducing operational stress on human teams.
+                </p>
+              </div>
+            </AnimatedSection>
+
+            <AnimatedSection delay={300}>
+              <div className="p-8 bg-gradient-to-br from-white to-green-50 rounded-lg shadow-lg border border-gray-100 h-full flex flex-col">
+                <div className="flex items-center mb-4">
+                  <div className="p-3 bg-cosmo-blue/10 rounded-full mr-4">
+                    <Rocket className="h-6 w-6 text-cosmo-blue" />
+                  </div>
+                  <h3 className="text-xl font-semibold">Ecological Balance</h3>
+                </div>
+                <p className="text-gray-600 flex-grow">
+                  Integrating environmental metrics into all decision systems to ensure technological progress advances planetary health and regenerative economics rather than depleting resources.
+                </p>
+              </div>
+            </AnimatedSection>
           </div>
+
+          <AnimatedSection delay={400}>
+            <div className="bg-cosmo-blue/5 p-8 md:p-12 rounded-2xl border border-cosmo-blue/20">
+              <h3 className="text-2xl font-semibold mb-6 text-center">Our 2035 Milestones</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <FeatureHighlight 
+                  title="30+ Countries" 
+                  description="Global implementation of adaptive intelligence systems across diverse cultural contexts" 
+                />
+                <FeatureHighlight 
+                  title="1000+ Organizations" 
+                  description="Enterprise and governmental partners utilizing our frameworks for strategic resilience" 
+                />
+                <FeatureHighlight 
+                  title="15+ Research Centers" 
+                  description="Global network of collaborative research hubs advancing ethical AI development" 
+                />
+                <FeatureHighlight 
+                  title="60% Reduction" 
+                  description="In organizational resource consumption through adaptive optimization systems" 
+                />
+              </div>
+            </div>
+          </AnimatedSection>
         </section>
 
         {/* CTA Section */}
