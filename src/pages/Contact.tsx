@@ -1,11 +1,11 @@
-
 import React from 'react';
+import type { FC } from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react';
 
-const Contact = () => {
+const Contact: FC = () => {
   return (
     <div className="min-h-screen">
       <HeroSection
