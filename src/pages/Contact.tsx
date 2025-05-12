@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { FC } from 'react';
 import HeroSection from '@/components/ui/HeroSection';
@@ -61,18 +60,37 @@ const Contact: FC = () => {
       securityRequirements: "",
       message: "",
       contactMethod: "email",
-      consent: false,
+      consent: true,
     },
   });
 
-  function onSubmit(data: FormValues) {
-    // In a real application, you would send this data to your backend
-    console.log(data);
-    toast({
-      title: "Form submitted",
-      description: "We'll get back to you soon!",
-    });
-    form.reset();
+  async function onSubmit(data: FormValues) {
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Failed to send message');
+      }
+
+      toast({
+        title: "Form submitted successfully",
+        description: "We'll get back to you soon!",
+      });
+      form.reset();
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast({
+        title: "Error submitting form",
+        description: "Please try again later or contact us directly.",
+        variant: "destructive",
+      });
+    }
   }
 
   return (
@@ -311,3 +329,4 @@ const Contact: FC = () => {
 };
 
 export default Contact;
+
