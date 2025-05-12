@@ -3,7 +3,7 @@ import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowDown, Vision, Target, Rocket } from 'lucide-react';
+import { ArrowDown, Eye, Target, Rocket } from 'lucide-react';
 import FeatureTable from '@/components/ui/FeatureTable';
 import FeatureHighlight from '@/components/ui/FeatureHighlight';
 
@@ -104,7 +104,7 @@ const About = () => {
               <div className="p-8 bg-gradient-to-br from-white to-blue-50 rounded-lg shadow-lg border border-gray-100 h-full flex flex-col">
                 <div className="flex items-center mb-4">
                   <div className="p-3 bg-cosmo-blue/10 rounded-full mr-4">
-                    <Vision className="h-6 w-6 text-cosmo-blue" />
+                    <Eye className="h-6 w-6 text-cosmo-blue" />
                   </div>
                   <h3 className="text-xl font-semibold">Cognitive Evolution</h3>
                 </div>
