@@ -1,9 +1,12 @@
+
 import React from 'react';
 import type { FC } from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { Mail } from 'lucide-react';
+import { Mail, MapPin, Clock, Globe } from 'lucide-react';
+import { Card, CardContent } from '@/components/ui/card';
+import { AspectRatio } from '@/components/ui/aspect-ratio';
 import { 
   Form,
   FormControl,
@@ -103,6 +106,8 @@ const Contact: FC = () => {
         }
         subtitle="Contact Us"
         description="Use the secure form or direct lines below for RFPs, pilots, and strategic engagements."
+        backgroundImage="/lovable-uploads/b51f73d0-c954-41b8-ae9f-08e4dc260cf4.png"
+        overlayClassName="bg-gradient-to-b from-cosmo-blue-dark/90 to-cosmo-blue-dark/95"
       />
 
       <div id="content" className="py-20">
@@ -116,6 +121,36 @@ const Contact: FC = () => {
                 Whether you're interested in our solutions, research partnerships, careers, or media inquiries, 
                 we'd love to hear from you. Fill out the form, and the right member of our team will get back to you shortly.
               </p>
+              
+              <div className="mb-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+                <Card className="overflow-hidden">
+                  <AspectRatio ratio={16/10} className="bg-muted">
+                    <img 
+                      src="/lovable-uploads/1b1eedf2-52a9-4c6e-8166-7d7e03a8ac9a.png" 
+                      alt="Pathway to innovation" 
+                      className="object-cover w-full h-full opacity-90"
+                    />
+                  </AspectRatio>
+                </Card>
+                <Card className="overflow-hidden">
+                  <AspectRatio ratio={16/10} className="bg-muted">
+                    <img 
+                      src="/lovable-uploads/74d3059e-72ba-41ce-ad8a-3a40d21474e6.png" 
+                      alt="AI visualization" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </Card>
+                <Card className="overflow-hidden">
+                  <AspectRatio ratio={16/10} className="bg-muted">
+                    <img 
+                      src="/lovable-uploads/8b39a491-7e65-4fc2-8cca-7bf4d8bfc986.png" 
+                      alt="Global perspective" 
+                      className="object-cover w-full h-full"
+                    />
+                  </AspectRatio>
+                </Card>
+              </div>
               
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
@@ -318,8 +353,68 @@ const Contact: FC = () => {
                       </p>
                     </div>
                   </div>
+
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mr-4">
+                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
+                        <MapPin className="h-6 w-6 text-cosmo-blue" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Global Presence</h4>
+                      <p className="text-gray-600">
+                        San Francisco • London • Singapore
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start">
+                    <div className="flex-shrink-0 mr-4">
+                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
+                        <Clock className="h-6 w-6 text-cosmo-blue" />
+                      </div>
+                    </div>
+                    <div>
+                      <h4 className="font-medium mb-1">Response Time</h4>
+                      <p className="text-gray-600">
+                        We typically respond within 24-48 hours
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
+
+              <Card className="overflow-hidden mb-8">
+                <AspectRatio ratio={16/9}>
+                  <img 
+                    src="/lovable-uploads/8b9888ea-38e3-4b97-b00a-e38c8c76ba94.png" 
+                    alt="Human and Nature Connection" 
+                    className="object-cover w-full h-full"
+                  />
+                </AspectRatio>
+                <CardContent className="p-4">
+                  <h4 className="font-semibold">Our Approach</h4>
+                  <p className="text-sm text-gray-600">
+                    At Cosmo Lab, we believe in the harmonious integration of technology and humanity.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="overflow-hidden">
+                <AspectRatio ratio={16/9}>
+                  <img 
+                    src="/lovable-uploads/42de4d59-b367-4b7a-8423-03b39c1964ac.png" 
+                    alt="Bridge to the future" 
+                    className="object-cover w-full h-full" 
+                  />
+                </AspectRatio>
+                <CardContent className="p-4">
+                  <h4 className="font-semibold">Bridging Possibilities</h4>
+                  <p className="text-sm text-gray-600">
+                    Let us help you navigate the path to technological advancement.
+                  </p>
+                </CardContent>
+              </Card>
             </AnimatedSection>
           </div>
         </div>
@@ -329,4 +424,3 @@ const Contact: FC = () => {
 };
 
 export default Contact;
-

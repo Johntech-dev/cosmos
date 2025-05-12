@@ -15,10 +15,9 @@ export default defineConfig(({ mode }) => ({
       // Add a custom tsconfig path to avoid the reference issues
       tsDecorators: true,
       plugins: [
-        {
-          name: 'custom-tsconfig-path',
+        // Using proper plugin format that doesn't cause TypeScript errors
+        ["custom-tsconfig-path", {
           config: () => ({
-            // Skip type checking during build to avoid the reference errors
             esbuild: {
               tsconfigRaw: {
                 compilerOptions: {
@@ -28,7 +27,7 @@ export default defineConfig(({ mode }) => ({
               }
             }
           })
-        }
+        }]
       ]
     }),
     mode === 'development' &&
