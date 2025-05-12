@@ -1,11 +1,80 @@
+
 import React from 'react';
 import type { FC } from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { Mail, MapPin, Phone, MessageSquare } from 'lucide-react';
+import { Mail } from 'lucide-react';
+import { 
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage 
+} from "@/components/ui/form";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { 
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue
+} from "@/components/ui/select";
+import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
+import { Checkbox } from "@/components/ui/checkbox";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { useForm } from "react-hook-form";
+import * as z from "zod";
+import { useToast } from "@/hooks/use-toast";
+
+const formSchema = z.object({
+  firstName: z.string().min(1, "First name is required"),
+  lastName: z.string().min(1, "Last name is required"),
+  email: z.string().email("Invalid email address"),
+  organization: z.string().optional(),
+  projectScope: z.string().min(1, "Project scope is required"),
+  securityRequirements: z.string().optional(),
+  message: z.string().min(1, "Message is required"),
+  contactMethod: z.enum(["email", "phone", "video"], {
+    required_error: "Please select a contact method",
+  }),
+  consent: z.literal(true, {
+    errorMap: () => ({ message: "You must accept the privacy policy" }),
+  }),
+});
+
+type FormValues = z.infer<typeof formSchema>;
 
 const Contact: FC = () => {
+  const { toast } = useToast();
+  
+  const form = useForm<FormValues>({
+    resolver: zodResolver(formSchema),
+    defaultValues: {
+      firstName: "",
+      lastName: "",
+      email: "",
+      organization: "",
+      projectScope: "",
+      securityRequirements: "",
+      message: "",
+      contactMethod: "email",
+      consent: false,
+    },
+  });
+
+  function onSubmit(data: FormValues) {
+    // In a real application, you would send this data to your backend
+    console.log(data);
+    toast({
+      title: "Form submitted",
+      description: "We'll get back to you soon!",
+    });
+    form.reset();
+  }
+
   return (
     <div className="min-h-screen">
       <HeroSection
@@ -21,7 +90,7 @@ const Contact: FC = () => {
       <div id="content" className="py-20">
         <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16">
-            <AnimatedSection className="w-full lg:w-1/2">
+            <AnimatedSection className="w-full lg:w-2/3">
               <h2 className="text-3xl md:text-4xl font-bold mb-6">
                 Connect With <span className="text-cosmo-blue">Our Team</span>
               </h2>
@@ -30,147 +99,189 @@ const Contact: FC = () => {
                 we'd love to hear from you. Fill out the form, and the right member of our team will get back to you shortly.
               </p>
               
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-1">
-                      First Name*
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
+              <Form {...form}>
+                <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <FormField
+                      control={form.control}
                       name="firstName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
-                      required
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>First Name*</FormLabel>
+                          <FormControl>
+                            <Input {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-1">
-                      Last Name*
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
+                    <FormField
+                      control={form.control}
                       name="lastName"
-                      className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
-                      required
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Last Name*</FormLabel>
+                          <FormControl>
+                            <Input {...field} />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
                     />
                   </div>
-                </div>
-                
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
-                    Email Address*
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
+                  
+                  <FormField
+                    control={form.control}
                     name="email"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
-                    required
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Email Address*</FormLabel>
+                        <FormControl>
+                          <Input {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                </div>
-                
-                <div>
-                  <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-1">
-                    Organisation Name & Type
-                  </label>
-                  <input
-                    type="text"
-                    id="organization"
+                  
+                  <FormField
+                    control={form.control}
                     name="organization"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Organisation Name & Type</FormLabel>
+                        <FormControl>
+                          <Input {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                </div>
-                
-                <div>
-                  <label htmlFor="topic" className="block text-sm font-medium text-gray-700 mb-1">
-                    Project Scope / Brief*
-                  </label>
-                  <select
-                    id="topic"
-                    name="topic"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
-                    required
-                  >
-                    <option value="">Select a topic</option>
-                    <option value="solutions">Solutions Information</option>
-                    <option value="demo">Request a Demo</option>
-                    <option value="research">Research Collaboration</option>
-                    <option value="careers">Careers</option>
-                    <option value="media">Media Inquiry</option>
-                    <option value="other">Other</option>
-                  </select>
-                </div>
-                
-                <div>
-                  <label htmlFor="security" className="block text-sm font-medium text-gray-700 mb-1">
-                    Compliance or Security Requirements
-                  </label>
-                  <textarea
-                    id="security"
-                    name="security"
-                    rows={2}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
-                  ></textarea>
-                </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                    Message*
-                  </label>
-                  <textarea
-                    id="message"
+                  
+                  <FormField
+                    control={form.control}
+                    name="projectScope"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Project Scope / Brief*</FormLabel>
+                        <Select 
+                          onValueChange={field.onChange} 
+                          defaultValue={field.value}
+                        >
+                          <FormControl>
+                            <SelectTrigger>
+                              <SelectValue placeholder="Select a topic" />
+                            </SelectTrigger>
+                          </FormControl>
+                          <SelectContent>
+                            <SelectItem value="solutions">Solutions Information</SelectItem>
+                            <SelectItem value="demo">Request a Demo</SelectItem>
+                            <SelectItem value="research">Research Collaboration</SelectItem>
+                            <SelectItem value="careers">Careers</SelectItem>
+                            <SelectItem value="media">Media Inquiry</SelectItem>
+                            <SelectItem value="other">Other</SelectItem>
+                          </SelectContent>
+                        </Select>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
+                    name="securityRequirements"
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Compliance or Security Requirements</FormLabel>
+                        <FormControl>
+                          <Textarea rows={2} {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
                     name="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-cosmo-blue"
-                    required
-                  ></textarea>
-                </div>
-                
-                <div>
-                  <label htmlFor="contact_method" className="block text-sm font-medium text-gray-700 mb-1">
-                    Preferred Contact Method*
-                  </label>
-                  <div className="flex flex-wrap gap-4">
-                    <label className="flex items-center">
-                      <input type="radio" name="contact_method" value="email" className="mr-2" />
-                      Email
-                    </label>
-                    <label className="flex items-center">
-                      <input type="radio" name="contact_method" value="phone" className="mr-2" />
-                      Phone
-                    </label>
-                    <label className="flex items-center">
-                      <input type="radio" name="contact_method" value="video" className="mr-2" />
-                      Video Call
-                    </label>
-                  </div>
-                </div>
-                
-                <div className="flex items-center">
-                  <input
-                    type="checkbox"
-                    id="consent"
-                    name="consent"
-                    className="h-4 w-4 text-cosmo-blue focus:ring-cosmo-blue border-gray-300 rounded"
-                    required
+                    render={({ field }) => (
+                      <FormItem>
+                        <FormLabel>Message*</FormLabel>
+                        <FormControl>
+                          <Textarea rows={4} {...field} />
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
                   />
-                  <label htmlFor="consent" className="ml-2 block text-sm text-gray-600">
-                    I agree to the processing of my personal data in accordance with Cosmo Lab's <a href="/privacy-policy" className="text-cosmo-blue underline">Privacy Policy</a>.*
-                  </label>
-                </div>
-                
-                <Button 
-                  type="submit"
-                  className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white py-3 px-8"
-                >
-                  Submit
-                </Button>
-              </form>
+                  
+                  <FormField
+                    control={form.control}
+                    name="contactMethod"
+                    render={({ field }) => (
+                      <FormItem className="space-y-3">
+                        <FormLabel>Preferred Contact Method*</FormLabel>
+                        <FormControl>
+                          <RadioGroup
+                            onValueChange={field.onChange}
+                            defaultValue={field.value}
+                            className="flex flex-wrap gap-4"
+                          >
+                            <div className="flex items-center space-x-2">
+                              <RadioGroupItem value="email" id="email" />
+                              <label htmlFor="email">Email</label>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                              <RadioGroupItem value="phone" id="phone" />
+                              <label htmlFor="phone">Phone</label>
+                            </div>
+                            <div className="flex items-center space-x-2">
+                              <RadioGroupItem value="video" id="video" />
+                              <label htmlFor="video">Video Call</label>
+                            </div>
+                          </RadioGroup>
+                        </FormControl>
+                        <FormMessage />
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <FormField
+                    control={form.control}
+                    name="consent"
+                    render={({ field }) => (
+                      <FormItem className="flex flex-row items-start space-x-3 space-y-0">
+                        <FormControl>
+                          <Checkbox
+                            checked={field.value}
+                            onCheckedChange={field.onChange}
+                          />
+                        </FormControl>
+                        <div className="space-y-1 leading-none">
+                          <FormLabel>
+                            I agree to the processing of my personal data in accordance with Cosmo Lab's{" "}
+                            <a href="/privacy-policy" className="text-cosmo-blue underline">
+                              Privacy Policy
+                            </a>
+                            .*
+                          </FormLabel>
+                          <FormMessage />
+                        </div>
+                      </FormItem>
+                    )}
+                  />
+                  
+                  <Button 
+                    type="submit"
+                    className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white py-3 px-8"
+                  >
+                    Submit
+                  </Button>
+                </form>
+              </Form>
             </AnimatedSection>
             
-            <AnimatedSection delay={200} className="w-full lg:w-1/2">
+            <AnimatedSection delay={200} className="w-full lg:w-1/3">
               <div className="bg-gray-50 p-8 rounded-lg mb-8">
                 <h3 className="text-2xl font-semibold mb-6">Direct Access</h3>
                 <div className="space-y-6">
@@ -189,97 +300,12 @@ const Contact: FC = () => {
                       </p>
                     </div>
                   </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mr-4">
-                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
-                        <MapPin className="h-6 w-6 text-cosmo-blue" />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Main Office</h4>
-                      <address className="not-italic text-gray-600">
-                        123 Innovation Drive<br />
-                        Palo Alto, CA 94304<br />
-                        United States
-                      </address>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mr-4">
-                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
-                        <Phone className="h-6 w-6 text-cosmo-blue" />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Phone</h4>
-                      <p className="text-gray-600">
-                        <a href="tel:+18005551234" className="hover:text-cosmo-blue transition-colors">
-                          +1 (800) 555-1234
-                        </a>
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start">
-                    <div className="flex-shrink-0 mr-4">
-                      <div className="bg-cosmo-blue/10 p-3 rounded-full">
-                        <MessageSquare className="h-6 w-6 text-cosmo-blue" />
-                      </div>
-                    </div>
-                    <div>
-                      <h4 className="font-medium mb-1">Media Inquiries</h4>
-                      <p className="text-gray-600">
-                        <a href="mailto:press@cosmolab.com" className="hover:text-cosmo-blue transition-colors">
-                          press@cosmolab.com
-                        </a>
-                      </p>
-                    </div>
-                  </div>
                 </div>
-              </div>
-              
-              <div className="rounded-lg overflow-hidden shadow-lg h-80">
-                <iframe
-                  title="Cosmo Lab Location"
-                  className="w-full h-full border-0"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101952.09169763806!2d-122.19535545541238!3d37.429789901466224!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb07b9dba1c39%3A0xe1ff55235f576cf!2sPalo%20Alto%2C%20CA!5e0!3m2!1sen!2sus!4v1683872227001!5m2!1sen!2sus"
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                ></iframe>
               </div>
             </AnimatedSection>
           </div>
         </div>
       </div>
-      
-      <section className="bg-gray-50 py-10">
-        <div className="container mx-auto px-4 md:px-6">
-          <div className="max-w-6xl mx-auto">
-            <AnimatedSection>
-              <div className="flex flex-wrap justify-center gap-8 text-center">
-                <div>
-                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Cosmo Lab Corporate Site Map</a>
-                </div>
-                <div>
-                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Cosmo Agent Program</a>
-                </div>
-                <div>
-                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Privacy</a>
-                </div>
-                <div>
-                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Terms</a>
-                </div>
-                <div>
-                  <a href="#" className="text-gray-600 hover:text-cosmo-blue">Evergreen Protocol</a>
-                </div>
-              </div>
-            </AnimatedSection>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
