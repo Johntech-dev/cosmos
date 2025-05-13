@@ -1,10 +1,11 @@
 
 import React from 'react';
-import HeroSection from '@/components/ui/HeroSection';
+import { HeroSection } from '@/components/ui/hero-section';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Calendar, Video, MessageSquare } from 'lucide-react';
 import FeatureHighlight from '@/components/ui/FeatureHighlight';
+import { Card, CardContent } from '@/components/ui/card';
 
 const Index = () => {
   return (
@@ -13,13 +14,32 @@ const Index = () => {
         title="Mind, Machines & the 4th Cultural Time Perception Shift"
         subtitle="Redefining the Future of Resilient Intelligence for Enterprise & Government Leaders"
         description="Cosmo Lab pioneers Intelligence Amplification (IA)—technology that augments, rather than replaces, human expertise. By harnessing the 4th Cultural Time Perception Shift (4th CTPS), we synchronise people, machines, and critical systems in real time, driving mission-ready performance and ethical innovation."
-        buttonText="Explore Solutions"
-        buttonUrl="/solutions"
-        secondaryButtonText="Read Insights"
-        secondaryButtonUrl="/insights"
-        tertiaryButtonText="Talk to Our Team"
-        tertiaryButtonUrl="/contact"
-      />
+      >
+        <div className="flex flex-col sm:flex-row justify-center gap-4">
+          <Button 
+            asChild
+            className="bg-cosmo-blue hover:bg-cosmo-blue-light text-white px-6 py-6 text-lg rounded-md shadow-glow"
+          >
+            <a href="/solutions">Explore Solutions</a>
+          </Button>
+          
+          <Button 
+            asChild
+            variant="outline" 
+            className="border-white text-white bg-white/10 px-6 py-6 text-lg"
+          >
+            <a href="/insights">Read Insights</a>
+          </Button>
+          
+          <Button 
+            asChild
+            variant="ghost" 
+            className="text-cosmo-blue-light px-6 py-6 text-lg"
+          >
+            <a href="/contact">Talk to Our Team</a>
+          </Button>
+        </div>
+      </HeroSection>
 
       <div id="content" className="py-20">
         {/* Executive Highlights Section */}
@@ -85,6 +105,85 @@ const Index = () => {
                   <a href="/solutions">Discover Our Solutions</a>
                 </Button>
               </AnimatedSection>
+            </div>
+          </div>
+        </section>
+
+        {/* Call to Action for Demo/Consultation Section */}
+        <section className="py-20 bg-gradient-to-r from-cosmo-blue-dark to-cosmo-blue">
+          <div className="container mx-auto px-4 md:px-6">
+            <AnimatedSection className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+                Experience the Future of Intelligence Amplification
+              </h2>
+              <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
+                Schedule a personalized demo or consultation with our expert team to discover how the 4th CTPS can transform your organization.
+              </p>
+            </AnimatedSection>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-white/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Calendar className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-3">Product Demo</h3>
+                  <p className="text-white/80 mb-6">
+                    See our Intelligence Amplification technology in action with a tailored demonstration.
+                  </p>
+                  <Button 
+                    asChild
+                    className="bg-white text-cosmo-blue hover:bg-gray-100 w-full"
+                  >
+                    <a href="/contact?type=demo">
+                      Request Demo
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/15 backdrop-blur-sm border-white/20 shadow-xl transform scale-105 hover:scale-110 transition-all duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-white/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <Video className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-3">Virtual Consultation</h3>
+                  <p className="text-white/80 mb-6">
+                    Meet with our experts to discuss your specific needs and explore customized solutions.
+                  </p>
+                  <Button 
+                    asChild
+                    className="bg-white text-cosmo-blue hover:bg-gray-100 w-full"
+                  >
+                    <a href="/contact?type=consultation">
+                      Book Consultation
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-white/10 backdrop-blur-sm border-white/20 shadow-xl hover:transform hover:scale-105 transition-all duration-300">
+                <CardContent className="p-6 text-center">
+                  <div className="bg-white/20 p-4 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <MessageSquare className="h-8 w-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-white mb-3">Quick Chat</h3>
+                  <p className="text-white/80 mb-6">
+                    Have questions? Schedule a brief call with our team to get the answers you need.
+                  </p>
+                  <Button 
+                    asChild
+                    className="bg-white text-cosmo-blue hover:bg-gray-100 w-full"
+                  >
+                    <a href="/contact?type=chat">
+                      Schedule Call
+                      <ArrowRight className="ml-2 h-4 w-4" />
+                    </a>
+                  </Button>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </section>
