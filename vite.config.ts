@@ -13,8 +13,8 @@ export default defineConfig(({ mode }) => ({
     react({
       tsDecorators: true,
     }),
-    mode === 'development' &&
-    componentTagger(),
+    // Only use componentTagger in development mode
+    mode === 'development' ? componentTagger() : null,
   ].filter(Boolean),
   resolve: {
     alias: {
