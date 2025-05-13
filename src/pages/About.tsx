@@ -1,13 +1,80 @@
-
-import React from 'react';
+import React, { useRef } from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowDown, Eye, Target, Rocket } from 'lucide-react';
 import FeatureTable from '@/components/ui/FeatureTable';
 import FeatureHighlight from '@/components/ui/FeatureHighlight';
+import jsPDF from 'jspdf';
+import html2canvas from 'html2canvas';
 
 const About = () => {
+  const contentRef = useRef<HTMLDivElement>(null);
+
+  const handleDownload = async () => {
+    if (!contentRef.current) return;
+    const content = contentRef.current.cloneNode(true) as HTMLElement;
+    const buttons = content.querySelectorAll('button');
+    buttons.forEach(button => button.remove());
+    const container = document.createElement('div');
+    container.className = 'pdf-container';
+    container.style.cssText = `
+      position: absolute;
+      left: -9999px;
+      width: 210mm;
+      padding: 20mm;
+      background-color: #ffffff;
+      font-family: system-ui, -apple-system, sans-serif;
+    `;
+    container.appendChild(content);
+    document.body.appendChild(container);
+    try {
+      const pdf = new jsPDF({ orientation: 'portrait', unit: 'mm', format: 'a4' });
+      const sections = container.querySelectorAll('.bg-white');
+      let currentPage = 1;
+      const pageHeight = 297;
+      const pageWidth = 210;
+      const margin = 20;
+      for (let i = 0; i < sections.length; i++) {
+        const section = sections[i] as HTMLElement;
+        const canvas = await html2canvas(section, {
+          scale: 2,
+          useCORS: true,
+          logging: false,
+          backgroundColor: '#ffffff',
+          windowWidth: (pageWidth - 2 * margin) * 3.78,
+          windowHeight: (pageHeight - 2 * margin) * 3.78,
+        });
+        const imgWidth = pageWidth - 2 * margin;
+        const imgHeight = (canvas.height * imgWidth) / canvas.width;
+        if (i > 0) {
+          pdf.addPage();
+          currentPage++;
+        }
+        pdf.addImage(
+          canvas.toDataURL('image/jpeg', 1.0),
+          'JPEG',
+          margin,
+          margin,
+          imgWidth,
+          imgHeight
+        );
+        pdf.setFontSize(10);
+        pdf.setTextColor(128);
+        pdf.text(
+          `Page ${currentPage}`,
+          pageWidth - margin - 20,
+          pageHeight - margin
+        );
+      }
+      pdf.save('cosmo-lab-corporate-overview.pdf');
+    } catch (error) {
+      console.error('Error generating PDF:', error);
+    } finally {
+      document.body.removeChild(container);
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <HeroSection
@@ -16,7 +83,7 @@ const About = () => {
         description="Cosmo Lab harmonises human potential, machine intelligence, and environmental balance to usher in a resilient era of adaptive intelligence."
       />
 
-      <div id="content">
+      <div id="content" ref={contentRef}>
         {/* Mission & Vision Section */}
         <section className="container mx-auto px-4 md:px-6 py-20">
           <AnimatedSection className="text-center max-w-4xl mx-auto mb-16">
@@ -76,13 +143,11 @@ const About = () => {
             
             <div className="text-center mt-12">
               <Button 
-                asChild
+                onClick={handleDownload}
                 className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
               >
-                <a href="#" download>
-                  <ArrowDown className="mr-2 h-4 w-4" />
-                  Download Corporate Overview (PDF)
-                </a>
+                <ArrowDown className="mr-2 h-4 w-4" />
+                Download Corporate Overview (PDF)
               </Button>
             </div>
           </div>

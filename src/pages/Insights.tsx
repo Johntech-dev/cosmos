@@ -1,4 +1,3 @@
-
 import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
@@ -11,29 +10,26 @@ const Insights = () => {
     {
       title: "The 4th CTPS: A Paradigm of Transformation",
       excerpt: "What if time wasn't fixed—but fluid, adaptive, and alive? Explore how the 4th Cultural Time Perception Shift is reshaping how humans think, learn, collaborate, and thrive.",
-      author: "Dr. Elena Kazan",
       date: "May 15, 2023",
       category: "Research",
       image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-      url: "#4th-ctps"
+      url: "/article/4th-ctps-paradigm"
     },
     {
       title: "Intelligence Amplification: Unlocking Human Potential",
       excerpt: "What happens when technology doesn't replace you—but elevates you? Explore how IA is reshaping how we think, feel, create, and grow.",
-      author: "Marcus Chen",
       date: "April 22, 2023",
       category: "Technology",
       image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      url: "#intelligence-amplification"
+      url: "/article/intelligence-amplification"
     },
     {
       title: "Designing for Human-Machine Synergy",
       excerpt: "What if your machine didn't just serve you—but understood you? Learn how Cosmo Lab designs cybernetic ecosystems where humans and machines amplify each other's intelligence.",
-      author: "Dr. Sophia Williams",
       date: "March 30, 2023",
       category: "Design",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      url: "#human-machine-synergy"
+      url: "/article/human-machine-synergy"
     }
   ];
   
@@ -41,13 +37,13 @@ const Insights = () => {
     {
       title: "Ethics in the Age of IA",
       excerpt: "As technology becomes more intelligent, our responsibility must become more human. Explore how Cosmo Lab embeds ethics, data sovereignty, and cognitive agency into every layer of IA.",
-      url: "#ethics-in-ia",
+      url: "/article/ethics-in-ia",
       category: "Ethics"
     },
     {
       title: "Social Transformation Systems: From Fragmentation to Wholeness",
       excerpt: "Hyper-connectivity has made us faster but not more unified. Discover how Cosmo Lab builds Social Transformation Systems to restore coherence and catalyze collective intelligence.",
-      url: "#social-transformation",
+      url: "/article/social-transformation",
       category: "Society"
     }
   ];
@@ -220,15 +216,15 @@ const Insights = () => {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
-                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">The Future of Intelligence Amplification (PDF)</a>
+                  <a href="/evergreen-protocol" className="text-gray-700 hover:text-cosmo-blue">The Evergreen Protocol (PDF)</a>
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
-                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">4th CTPS: Technical Implementation Guide (PDF)</a>
+                  <a href="/white-paper" className="text-gray-700 hover:text-cosmo-blue">4th CTPS: Technical Implementation Guide (PDF)</a>
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
-                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Evergreen Protocol: Ethics Framework (PDF)</a>
+                  <a href="/white-paper" className="text-gray-700 hover:text-cosmo-blue">Cosmo Lab White Paper (PDF)</a>
                 </li>
               </ul>
             </AnimatedSection>
@@ -274,18 +270,91 @@ const Insights = () => {
               <ul className="space-y-3">
                 <li className="flex items-center">
                   <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
-                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Intelligence Amplification FAQ</a>
+                  <a href="/faq" className="text-gray-700 hover:text-cosmo-blue">Intelligence Amplification FAQ</a>
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
-                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Implementation & Integration FAQ</a>
+                  <a href="/faq" className="text-gray-700 hover:text-cosmo-blue">Implementation & Integration FAQ</a>
                 </li>
                 <li className="flex items-center">
                   <ArrowRight className="h-4 w-4 text-cosmo-blue mr-2" />
-                  <a href="#" className="text-gray-700 hover:text-cosmo-blue">Data Privacy & Security FAQ</a>
+                  <a href="/faq" className="text-gray-700 hover:text-cosmo-blue">Data Privacy & Security FAQ</a>
                 </li>
               </ul>
             </AnimatedSection>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section id="faq" className="bg-gray-50 py-20">
+          <div className="container mx-auto px-4 md:px-6">
+            <AnimatedSection className="text-center mb-16">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Frequently Asked <span className="text-cosmo-blue">Questions</span>
+              </h2>
+              <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+                Explore common questions about the Evergreen Initiative, Intelligence Amplification,
+                and the 4th Cultural Time Perception Shift.
+              </p>
+            </AnimatedSection>
+
+            <div className="max-w-4xl mx-auto">
+              <div className="space-y-8">
+                <AnimatedSection>
+                  <div className="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold mb-4">What is the Evergreen Initiative?</h3>
+                    <p className="text-gray-600">
+                      The Evergreen Initiative is a global movement dedicated to Intelligence Amplification (IA) as the foundation 
+                      of a sustainable and regenerative future. It envisions a cybernetic ecology where humans thrive in harmony 
+                      with nature and technology—through cognitive sovereignty, ecological design, and cultural resilience.
+                    </p>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={100}>
+                  <div className="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold mb-4">What is Intelligence Amplification (IA)?</h3>
+                    <p className="text-gray-600">
+                      IA is a design paradigm that enhances human intelligence—cognitive, emotional, and creative—by working 
+                      symbiotically with natural neurocognitive rhythms. Unlike AI, IA does not replace people; it empowers 
+                      them to become more adaptive, self-aware, and aligned with real-time feedback from their environment.
+                    </p>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={200}>
+                  <div className="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold mb-4">How is IA different from AI?</h3>
+                    <p className="text-gray-600">
+                      AI automates. IA collaborates. While AI often centralizes control and efficiency, IA supports the 
+                      decentralization of agency—amplifying perception, memory, learning, and decision-making in harmony 
+                      with human values and ecological feedback.
+                    </p>
+                  </div>
+                </AnimatedSection>
+
+                <AnimatedSection delay={300}>
+                  <div className="bg-white p-6 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold mb-4">What are the Four Cultural Time Perception Shifts (CTPS)?</h3>
+                    <ul className="list-disc list-inside text-gray-600 space-y-2">
+                      <li>1st CTPS – Calendar: Organized cyclical time (agriculture)</li>
+                      <li>2nd CTPS – Metronome: Mechanical time and scientific inquiry</li>
+                      <li>3rd CTPS – Atomic Clock: Precision time driving industry and computation</li>
+                      <li>4th CTPS – Personal Cognitive Computing: Time as fluid, adaptive, and internalized via neurocognitive rhythms</li>
+                    </ul>
+                  </div>
+                </AnimatedSection>
+
+                <div className="text-center mt-10">
+                  <Button 
+                    asChild
+                    className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
+                  >
+                    <a href="/faq">View All FAQs</a>
+                  </Button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
@@ -320,65 +389,48 @@ const Insights = () => {
         <section id="4th-ctps" className="container mx-auto px-4 md:px-6 py-20">
           <AnimatedSection className="max-w-4xl mx-auto mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center">
-              The 4th Cultural Time Perception Shift: <span className="text-cosmo-blue">A Paradigm of Transformation</span>
+              The 4th Cultural Time Perception Shift: <span className="text-cosmo-blue">A New Epoch in Human Potential</span>
             </h2>
             
             <div className="flex items-center justify-center mb-8">
-              <div className="w-12 h-12 rounded-full overflow-hidden mr-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=388&q=80" 
-                  alt="Dr. Elena Kazan"
-                  className="w-full h-full object-cover"
-                />
-              </div>
               <div>
-                <p className="font-medium">Dr. Elena Kazan</p>
                 <p className="text-sm text-gray-500">May 15, 2023 • 8 min read</p>
               </div>
             </div>
             
             <div className="prose prose-lg max-w-none">
               <p className="lead">
-                What if time wasn't fixed—but fluid, adaptive, and alive? The 4th Cultural Time Perception Shift (4th CTPS) 
-                is reshaping how humans think, learn, collaborate, and thrive. Explore how Cosmo Lab is leading this transformation 
-                with adaptive systems, cognitive mirroring, and a new era of resilience.
+                The 4th Cultural Time Perception Shift represents humanity's move from experiencing time as an external force to mastering 
+                it as a fluid, personalized, and co-evolving construct. This shift, driven by advanced cognitive technologies, artificial 
+                intelligence, and real-time feedback systems, transforms time from something we measure to something we optimize.
               </p>
               
               <h3>Introduction: A New Epoch of Perception</h3>
               <p>
-                We live not just in an era of exponential technology, but of temporal transformation. Time itself is evolving—no 
-                longer merely measured in hours and minutes but experienced, interpreted, and designed. The 4th CTPS isn't a metaphor. 
-                It's a cognitive and cultural reconfiguration that is reshaping how humans relate to change, challenge, creativity, 
-                and consciousness.
-              </p>
-              <p>
-                At Cosmo Lab, we recognize the 4th CTPS as a paradigm of becoming. It's about aligning with the deeper rhythms of 
-                human neurocognition, emotional intelligence, and ecological co-adaptation—designing lives, organizations, and 
-                cultures that thrive by mirroring the fluidity of time itself.
+                Throughout history, humanity has redefined its relationship with time, ushering in sweeping transformations in how we live, 
+                create, and connect. From the natural rhythms of the first Cultural Time Perception Shift (CTPS) to the mechanized order 
+                of the second and the relativistic understanding of the third, each shift has expanded our horizons. Now, the 4th Cultural 
+                Time Perception Shift (4th CTPS) challenges us to go further—transforming time from a linear, external force into a fluid, 
+                personal, and co-created dimension.
               </p>
               
-              <h3>From Linear to Fluid Time</h3>
+              <h3>Reimagining Time: From Fixed to Fluid</h3>
               <p>
-                For centuries, human civilization was structured by linear time—agricultural seasons, industrial schedules, academic 
-                years. This linearity brought order, but it also created rigidity, burnout, and a cultural intolerance for uncertainty.
+                The 4th CTPS represents a fundamental shift in our perception of time. No longer confined to rigid calendars or ticking 
+                clocks, time becomes an adaptive, co-evolving construct shaped by three key dynamics:
               </p>
-              <p>The 4th CTPS invites a shift:</p>
               <ul>
-                <li>From rigid sequences to dynamic flow</li>
-                <li>From clock-based optimization to attention-based optimization</li>
-                <li>From "time management" to time perception mastery</li>
+                <li>Intelligence Amplification: Through wearable devices, biofeedback tools, and AI-driven systems</li>
+                <li>Cybernetic Ecology: The interplay between humans, machines, and environments</li>
+                <li>Temporal Elasticity: Understanding and shaping our perceptions of time</li>
               </ul>
-              <p>
-                In a world of constant change, resilience is no longer about holding the line. It's about dancing with complexity, 
-                attuning to new signals, and responding from presence rather than panic. This is what fluid time perception makes possible.
-              </p>
               
               <div className="text-center my-10">
                 <Button 
                   asChild
                   className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
                 >
-                  <a href="/insights/4th-ctps-paradigm">Read Full Article</a>
+                  <a href="/article/4th-ctps-paradigm">Read Full Article</a>
                 </Button>
               </div>
             </div>

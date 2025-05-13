@@ -1,4 +1,3 @@
-
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -13,9 +12,13 @@ import Industries from "./pages/Industries";
 import Insights from "./pages/Insights";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
+import Article from "./pages/Article";
+import FAQ from "./pages/FAQ";
+import WhitePaper from "./pages/WhitePaper";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
+import EvergreenProtocol from "./pages/EvergreenProtocol";
 
 // ScrollToTop component that will scroll to top on route changes
 const ScrollToTop = () => {
@@ -46,6 +49,10 @@ const App = () => (
             <Route path="/industries" element={<Industries />} />
             <Route path="/insights" element={<Insights />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/article/:slug" element={<Article />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/white-paper" element={<WhitePaper />} />
+            <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

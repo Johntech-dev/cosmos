@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Button } from '@/components/ui/button';
 import { ChevronDown } from 'lucide-react';
@@ -17,6 +16,7 @@ interface HeroSectionProps {
   backgroundImage?: string;
   className?: string;
   overlayClassName?: string;
+  children?: React.ReactNode;
 }
 
 const HeroSection: React.FC<HeroSectionProps> = ({
@@ -32,6 +32,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
   backgroundImage,
   className,
   overlayClassName,
+  children,
 }) => {
   const scrollToContent = () => {
     const contentElement = document.getElementById('content');
@@ -79,7 +80,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({
           </p>
         )}
         
-        {(buttonText || secondaryButtonText || tertiaryButtonText) && (
+        {(buttonText || secondaryButtonText || tertiaryButtonText || children) && (
           <div className="flex flex-wrap justify-center gap-4 animate-fade-in" style={{animationDelay: '0.6s'}}>
             {buttonText && (
               <Button 
@@ -109,6 +110,8 @@ const HeroSection: React.FC<HeroSectionProps> = ({
                 <a href={tertiaryButtonUrl}>{tertiaryButtonText}</a>
               </Button>
             )}
+
+            {children}
           </div>
         )}
       </div>
