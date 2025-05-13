@@ -1,3 +1,4 @@
+
 import React from "react";
 import { cn } from "@/lib/utils";
 
@@ -7,6 +8,8 @@ interface HeroSectionProps {
   description?: string;
   className?: string;
   children?: React.ReactNode;
+  backgroundImage?: string;
+  overlayClassName?: string;
 }
 
 export const HeroSection = ({
@@ -15,14 +18,25 @@ export const HeroSection = ({
   description,
   className,
   children,
+  backgroundImage,
+  overlayClassName,
 }: HeroSectionProps) => {
   return (
     <div
       className={cn(
         "relative overflow-hidden py-20 md:py-32",
-        className
+        !backgroundImage ? className : cn("bg-cover bg-center", className)
       )}
+      style={backgroundImage ? { backgroundImage: `url(${backgroundImage})` } : undefined}
     >
+      {backgroundImage && (
+        <div 
+          className={cn(
+            "absolute inset-0 bg-gradient-to-b from-cosmo-blue-dark/80 to-cosmo-blue-dark/90",
+            overlayClassName
+          )}
+        />
+      )}
       <div className="container relative z-10 mx-auto px-4 md:px-6">
         <div className="mx-auto max-w-3xl text-center">
           {subtitle && (
@@ -43,4 +57,4 @@ export const HeroSection = ({
       </div>
     </div>
   );
-}; 
+};
