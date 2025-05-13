@@ -359,7 +359,7 @@ const Insights = () => {
         </section>
 
         {/* Newsletter Section */}
-        <section className="bg-cosmo-blue-dark text-white py-20">
+        {/* <section className="bg-cosmo-blue-dark text-white py-20">
           <div className="container mx-auto px-4 md:px-6">
             <div className="max-w-3xl mx-auto text-center">
               <AnimatedSection>
@@ -383,7 +383,7 @@ const Insights = () => {
               </AnimatedSection>
             </div>
           </div>
-        </section>
+        </section> */}
 
         {/* Blog Post Preview */}
         <section id="4th-ctps" className="container mx-auto px-4 md:px-6 py-20">

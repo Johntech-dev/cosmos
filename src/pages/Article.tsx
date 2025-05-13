@@ -447,7 +447,7 @@ const Article = () => {
                   <h2 className="text-3xl font-bold text-gray-900">Article Details</h2>
                   <div className="flex items-center mt-2">
                     <div className="w-10 h-10 rounded-full overflow-hidden mr-3">
-
+    
                     </div>
                     <div>
                       <p className="font-medium text-gray-900">{article.author}</p>
