@@ -31,7 +31,7 @@ const Industries = () => {
                 and protect critical information while ensuring the highest standards of accountability and transparency.</p>
               </>
             }
-            imageUrl="https://images.unsplash.com/photo-1569017388730-020b5f80a004?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            imageUrl="/AdobeStock_800182196.jpeg"
             imageAlt="Government & Public Sector"
           >
             <div className="space-y-4 mb-6">
@@ -82,7 +82,7 @@ const Industries = () => {
                   while preserving patient privacy and data sovereignty.</p>
                 </>
               }
-              imageUrl="https://images.unsplash.com/photo-1666214280557-f1b5022eb634?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              imageUrl="/brain.jpg"
               imageAlt="Healthcare & Life Sciences"
               reverse={true}
             >
@@ -133,7 +133,7 @@ const Industries = () => {
                 optimizing resource utilization, enhancing public safety, and ensuring operational continuity across critical services.</p>
               </>
             }
-            imageUrl="https://images.unsplash.com/photo-1498354136128-58f790194fa7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            imageUrl="/AdobeStock_563774947.jpeg"
             imageAlt="Critical Infrastructure & Smart Cities"
           >
             <div className="space-y-4 mb-6">
@@ -184,7 +184,7 @@ const Industries = () => {
                   that foster innovation while reducing burnout.</p>
                 </>
               }
-              imageUrl="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              imageUrl="/AdobeStock_1028317895.jpeg"
               imageAlt="Corporate Innovation"
               reverse={true}
             >

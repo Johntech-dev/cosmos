@@ -64,7 +64,7 @@ const Solutions = () => {
                 machine-assisted insights.</p>
               </>
             }
-            imageUrl="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            imageUrl="/AdobeStock_1035057216.jpeg"
             imageAlt="echoX Platform"
           >
             <div className="space-y-4 mb-6">
@@ -120,7 +120,7 @@ const Solutions = () => {
                   overload while maintaining precision and performance in mission-critical environments.</p>
                 </>
               }
-              imageUrl="https://images.unsplash.com/photo-1558346490-a72e53ae2d4f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+              imageUrl="/AdobeStock_448657423.jpeg"
               imageAlt="Human-Machine Synergy"
               reverse={true}
             >

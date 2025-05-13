@@ -60,7 +60,7 @@ const Index = () => {
                   <div className="bg-cosmo-blue/10 rounded-lg absolute -top-8 -left-8 w-full h-full -z-10"></div>
                   <div className="rounded-lg overflow-hidden shadow-lg">
                     <img 
-                      src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHRlY2hub2xvZ3klMjB0ZWFtfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=80" 
+                      src="/AdobeStock_1028317895.jpeg" 
                       alt="Strategic Advantage"
                       className="w-full h-auto object-cover"
                     />
