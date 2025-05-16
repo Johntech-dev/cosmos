@@ -19,7 +19,7 @@ import WhitePaper from "./pages/WhitePaper";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import EvergreenProtocol from "./pages/EvergreenProtocol";
-import Careers from "./pages/careers";
+import Careers from "./pages/Careers";
 
 // ScrollToTop component that will scroll to top on route changes
 const ScrollToTop = () => {
