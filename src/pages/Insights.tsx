@@ -8,6 +8,14 @@ import ArticleCard from '@/components/ui/ArticleCard';
 const Insights = () => {
   const featuredArticles = [
     {
+      title: "Work-Life Balance in the Age of Intelligence Amplification",
+      excerpt: "In an era of constant connectivity and accelerating change, achieving true work-life balance requires more than just time management—it demands a fundamental reimagining of how we integrate our professional and personal lives.",
+      date: "June 1, 2023",
+      category: "Wellbeing",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      url: "/article/work-life-balance"
+    },
+    {
       title: "The 4th CTPS: A Paradigm of Transformation",
       excerpt: "What if time wasn't fixed—but fluid, adaptive, and alive? Explore how the 4th Cultural Time Perception Shift is reshaping how humans think, learn, collaborate, and thrive.",
       date: "May 15, 2023",
@@ -191,7 +199,7 @@ const Insights = () => {
 
         {/* Resource Library */}
         <section className="container mx-auto px-4 md:px-6 py-20">
-          <AnimatedSection className="text-center mb-16">
+          {/* <AnimatedSection className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold mb-6">
               Resource <span className="text-cosmo-blue">Library</span>
             </h2>
@@ -282,7 +290,7 @@ const Insights = () => {
                 </li>
               </ul>
             </AnimatedSection>
-          </div>
+          </div> */}
         </section>
 
         {/* FAQ Section */}

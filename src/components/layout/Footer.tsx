@@ -60,11 +60,6 @@ const Footer = () => {
           <div>
             <h3 className="text-lg font-semibold mb-6">Contact Us</h3>
             <address className="not-italic text-gray-300 space-y-3">
-              <p>123 Innovation Drive</p>
-              <p>Palo Alto, CA 94304</p>
-              <p className="pt-2">
-                <a href="tel:+18005551234" className="hover:text-cosmo-blue-light transition-colors">+1 (800) 555-1234</a>
-              </p>
               <p>
                 <a href="mailto:info@cosmolab.com" className="hover:text-cosmo-blue-light transition-colors">connect@cosmolab.cc</a>
               </p>
@@ -75,7 +70,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400 mb-4 md:mb-0">
-              &copy; {new Date().getFullYear()} Cosmo Lab. All rights reserved.
+               Cosmo Lab  powered by Fourth Gate LLE, All rights reserved &copy; {new Date().getFullYear()}
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
               <a href="#" className="hover:text-cosmo-blue-light transition-colors">Privacy Policy</a>

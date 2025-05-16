@@ -25,18 +25,19 @@ const Article = () => {
   const articles: Articles = {
     '4th-ctps-paradigm': {
       title: "The 4th Cultural Time Perception Shift: A New Epoch in Human Potential",
+      author: "Cosmo Lab Research Team",
       date: "May 15, 2023",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
       content: `
-        <p class="lead">
+        <p class="lead mb-8">
           The 4th Cultural Time Perception Shift represents humanity's move from experiencing time as an external force to mastering 
           it as a fluid, personalized, and co-evolving construct. This shift, driven by advanced cognitive technologies, artificial 
           intelligence, and real-time feedback systems, transforms time from something we measure to something we optimize.
         </p>
 
-        <h3>Introduction: A New Epoch of Perception</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Introduction: A New Epoch of Perception</h3>
+        <p class="mb-6">
           Throughout history, humanity has redefined its relationship with time, ushering in sweeping transformations in how we live, 
           create, and connect. From the natural rhythms of the first Cultural Time Perception Shift (CTPS) to the mechanized order 
           of the second and the relativistic understanding of the third, each shift has expanded our horizons. Now, the 4th Cultural 
@@ -44,69 +45,66 @@ const Article = () => {
           personal, and co-created dimension.
         </p>
 
-        <h3>Reimagining Time: From Fixed to Fluid</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Reimagining Time: From Fixed to Fluid</h3>
+        <p class="mb-6">
           The 4th CTPS represents a fundamental shift in our perception of time. No longer confined to rigid calendars or ticking 
           clocks, time becomes an adaptive, co-evolving construct shaped by three key dynamics:
         </p>
-        <ul>
-          <li>Intelligence Amplification: Through wearable devices, biofeedback tools, and AI-driven systems, we gain unparalleled 
-              insight into our mental and emotional states.</li>
-          <li>Cybernetic Ecology: The interplay between humans, machines, and environments forms a symbiotic relationship where 
-              dynamic feedback loops adapt and evolve.</li>
-          <li>Temporal Elasticity: By understanding and shaping our perceptions of time, we can expand peak moments of creativity 
-              and flow while reclaiming periods for rest and renewal.</li>
+        <ul class="mb-6 space-y-2">
+          <li>Intelligence Amplification: Through wearable devices, biofeedback tools, and AI-driven systems</li>
+          <li>Cybernetic Ecology: The interplay between humans, machines, and environments</li>
+          <li>Temporal Elasticity: Understanding and shaping our perceptions of time</li>
         </ul>
 
-        <h3>From Chronos to Kairos: Redefining How We Live and Create</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">From Chronos to Kairos: Redefining How We Live and Create</h3>
+        <p class="mb-6">
           Time has often been measured in Chronos—sequential, chronological time. The 4th CTPS invites us to prioritize Kairos—moments 
           of meaning, creativity, and peak performance. Imagine designing your life around these transformational moments, where every 
           task, interaction, and experience aligns with your highest potential.
         </p>
-        <ul>
+        <ul class="mb-6 space-y-2">
           <li>Peak Performance: Align work and goals with your cognitive and emotional peaks</li>
           <li>Enhanced Environments: Create spaces that enhance relaxation, focus, or collaboration</li>
           <li>Flow Expansion: Enter the "zone" more easily and remain there longer</li>
         </ul>
 
-        <h3>Digital Self-Sovereignty: Reclaiming Time as a Personal Resource</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Digital Self-Sovereignty: Reclaiming Time as a Personal Resource</h3>
+        <p class="mb-6">
           At the core of the 4th CTPS lies the principle of Digital Self-Sovereignty—the empowerment of individuals to own and shape 
           their temporal experiences. By combining intelligence amplification with personalized insights, we can unlock new dimensions 
           of freedom and agency:
         </p>
-        <ul>
+        <ul class="mb-6 space-y-2">
           <li>Owning Your Narrative: Data-driven tools allow us to align our schedules with personal values</li>
           <li>The Creative Continuum: Human and machine intelligence collaborate to generate innovative solutions</li>
           <li>Freedom through Agency: True liberation lies in having the agency to design lives filled with purpose</li>
         </ul>
 
-        <h3>Co-Creation: Individual Mastery Meets Collective Progress</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Co-Creation: Individual Mastery Meets Collective Progress</h3>
+        <p class="mb-6">
           While the 4th CTPS transforms individual lives, its ripple effects extend far beyond the personal. As individuals harness 
           time to enhance their creativity, resilience, and productivity, their contributions fuel a collective intelligence that 
           benefits entire communities.
         </p>
-        <ul>
+        <ul class="mb-6 space-y-2">
           <li>Shared Progress: Tools and frameworks empower collaboration in solving complex challenges</li>
           <li>Equity in Access: Democratizing intelligence amplification and personalized time systems</li>
           <li>Planetary Harmony: Aligning human progress with ecological sustainability</li>
         </ul>
 
-        <h3>The Promise of the 4th CTPS: Time as an Infinite Canvas</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">The Promise of the 4th CTPS: Time as an Infinite Canvas</h3>
+        <p class="mb-6">
           This shift challenges us to rethink the very fabric of our lives. Time, once seen as a finite resource, becomes an infinite 
           canvas for exploration, innovation, and growth. With this new understanding, the 4th CTPS offers us:
         </p>
-        <ul>
+        <ul class="mb-6 space-y-2">
           <li>A Deeper Connection to the Present: Embrace the richness of the moment</li>
           <li>An Enhanced Future: Use intelligence amplification to shape goals and aspirations</li>
           <li>A Harmonious Legacy: Balance personal and communal growth with ecological sustainability</li>
         </ul>
 
-        <h3>Conclusion: Your Invitation to Master the Art of Time</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Conclusion: Your Invitation to Master the Art of Time</h3>
+        <p class="mb-6">
           The 4th Cultural Time Perception Shift isn't just a technological evolution—it's a call to awaken. It's an invitation to 
           rediscover the essence of living, to engage deeply with the present, and to build a future aligned with your highest 
           aspirations. Step into the era of the 4th CTPS—a future where time is no longer a limitation but a gateway to infinite 
@@ -116,66 +114,67 @@ const Article = () => {
     },
     'intelligence-amplification': {
       title: "Intelligence Amplification: Unlocking Human Potential",
+      author: "Cosmo Lab Research Team",
       date: "April 22, 2023",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       content: `
-        <p class="lead">
+        <p class="lead mb-8">
           What happens when technology doesn't replace you—but elevates you? Intelligence Amplification (IA) is reshaping how we 
           think, feel, create, and grow. At Cosmo Lab, IA is a philosophy, not just a tool. Explore how we're building systems 
           that augment your cognitive potential and emotional resilience.
         </p>
 
-        <h3>Introduction: Augmentation as a Pathway to Awakening</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Introduction: Augmentation as a Pathway to Awakening</h3>
+        <p class="mb-6">
           The world has been captivated by Artificial Intelligence (AI), but Cosmo Lab takes a different approach: Intelligence 
           Amplification. IA expands awareness, synchronizes human intuition with machine precision, and invites collaboration.
         </p>
 
-        <h3>The Core Distinction: IA vs AI</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">The Core Distinction: IA vs AI</h3>
+        <p class="mb-6">
           AI narrows cognition into predictive patterns; IA expands it. AI substitutes; IA synchronizes. AI takes over; IA invites 
           partnership. Cosmo Lab firmly embraces IA—nurturing, not replacing, human ingenuity.
         </p>
 
-        <h3>How IA Works: The Architecture of Amplification</h3>
-        <p>IA bridges multiple layers:</p>
-        <ul>
+        <h3 class="font-bold text-2xl mt-8 mb-4">How IA Works: The Architecture of Amplification</h3>
+        <p class="mb-6">IA bridges multiple layers:</p>
+        <ul class="mb-6 space-y-2">
           <li>Perception: Reflecting internal rhythms via HRV and TPM</li>
           <li>Decision-Making: echoX offers resonant insights, not prescriptive answers</li>
           <li>Memory & Learning: echoX stores patterns of attention and emotional salience</li>
           <li>Creative Continuum: Recognizing and extending optimal flow states</li>
         </ul>
 
-        <h3>Real-World Example: IA in Healthcare</h3>
-        <p>An IA-enabled clinician dashboard can:</p>
-        <ul>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Real-World Example: IA in Healthcare</h3>
+        <p class="mb-6">An IA-enabled clinician dashboard can:</p>
+        <ul class="mb-6 space-y-2">
           <li>Detect elevated stress and initiate a micro-reset</li>
           <li>Adjust ambient conditions to support circadian rhythm</li>
           <li>Suggest compassionate phrasing for patient conversations</li>
           <li>Recommend breaks aligned with personal flow rhythms</li>
         </ul>
 
-        <h3>The Supercreative Mind: IA as Catalyst</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">The Supercreative Mind: IA as Catalyst</h3>
+        <p class="mb-6">
           Intelligence is the ability to navigate ambiguity, synthesize perspectives, and create meaning. IA nurtures the 
           Supercreative Mind, enabling fluid movement through multiple cognitive stances.
         </p>
 
-        <h3>Neurocognitive Resilience: The Unsung Gift of IA</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Neurocognitive Resilience: The Unsung Gift of IA</h3>
+        <p class="mb-6">
           IA sustains performance without burnout by tracking and expanding cognitive coherence, identifying loops, and suggesting 
           restorative rituals.
         </p>
 
-        <h3>Data Sovereignty and the Ethics of Amplification</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Data Sovereignty and the Ethics of Amplification</h3>
+        <p class="mb-6">
           The Evergreen Protocol ensures full user control of behavioral biometric data, transparent models, and federated storage. 
           IA without ethics is surveillance; IA with ethics is self-sovereignty.
         </p>
 
-        <h3>Conclusion: Becoming More Human, Not Less</h3>
-        <p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Conclusion: Becoming More Human, Not Less</h3>
+        <p class="mb-6">
           Cosmo Lab builds ecosystems that help humans think more clearly, feel more deeply, and create more beautifully—awakening 
           the magnificence already within.
         </p>
@@ -183,6 +182,7 @@ const Article = () => {
     },
     'human-machine-synergy': {
       title: "Designing for Human-Machine Synergy: Toward a Cybernetic Ecology",
+      author: "Cosmo Lab Research Team",
       date: "March 30, 2023",
       readTime: "9 min read",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
@@ -251,6 +251,7 @@ const Article = () => {
     },
     'ethics-in-ia': {
       title: "Ethics in the Age of Intelligence Amplification: Designing for Sovereignty and Trust",
+      author: "Cosmo Lab Research Team",
       date: "March 15, 2023",
       readTime: "8 min read",
       image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
@@ -314,6 +315,7 @@ const Article = () => {
     },
     'social-transformation': {
       title: "Social Transformation Systems: From Fragmentation to Wholeness",
+      author: "Cosmo Lab Research Team",
       date: "February 28, 2023",
       readTime: "10 min read",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
@@ -371,6 +373,63 @@ const Article = () => {
         <p>
           Future systems bring us back to coherence. Cosmo Lab designs frameworks for cultural healing—inviting all to build 
           a world of collective resonance.
+        </p>
+      `
+    },
+    'work-life-balance': {
+      title: "Work-Life Balance in the Age of Intelligence Amplification",
+      author: "Cosmo Lab Research Team",
+      date: "June 1, 2023",
+      readTime: "7 min read",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      content: `
+        <p class="lead mb-8">
+          In an era of constant connectivity and accelerating change, achieving true work-life balance requires more than just time management—it demands a fundamental reimagining of how we integrate our professional and personal lives. Discover how Intelligence Amplification can help create harmony between productivity and well-being.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Introduction: Beyond the Traditional Balance</h3>
+        <p class="mb-6">
+          The concept of work-life balance has evolved from a simple division of time to a dynamic integration of our professional and personal selves. In the age of Intelligence Amplification, we have the tools to create a more fluid, responsive approach to living a fulfilling life.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">The New Balance: Integration Over Separation</h3>
+        <p class="mb-6">
+          Traditional work-life balance often implies a strict separation between work and personal life. However, Intelligence Amplification enables us to create a more nuanced approach:
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li>Flow State Optimization: Using IA to identify and maximize peak performance periods</li>
+          <li>Adaptive Boundaries: Creating flexible work structures that respond to personal needs</li>
+          <li>Energy Management: Leveraging technology to maintain sustainable productivity</li>
+        </ul>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">The Role of Technology in Modern Balance</h3>
+        <p class="mb-6">
+          Intelligence Amplification tools can help us achieve better balance by:
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li>Monitoring cognitive load and suggesting optimal break times</li>
+          <li>Adapting work environments to support focus and creativity</li>
+          <li>Facilitating seamless transitions between work and personal activities</li>
+        </ul>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Creating Your Personal Balance Framework</h3>
+        <p class="mb-6">
+          A personalized approach to work-life balance involves:
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li>Understanding your unique energy patterns</li>
+          <li>Setting boundaries that align with your values</li>
+          <li>Using technology to support, not disrupt, your natural rhythms</li>
+        </ul>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">The Future of Work-Life Integration</h3>
+        <p class="mb-6">
+          As we move forward, the integration of work and life will become increasingly fluid, supported by technologies that understand and adapt to our needs. The key is to use these tools mindfully, ensuring they enhance rather than complicate our lives.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Conclusion: Balance as a Dynamic Journey</h3>
+        <p class="mb-6">
+          True work-life balance is not a destination but a continuous journey of adjustment and growth. With Intelligence Amplification, we have the tools to make this journey more intentional and fulfilling, creating lives that are both productive and meaningful.
         </p>
       `
     }

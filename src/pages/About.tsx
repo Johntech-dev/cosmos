@@ -141,7 +141,7 @@ const About = () => {
               className="max-w-3xl mx-auto"
             />
             
-            <div className="text-center mt-12">
+            {/* <div className="text-center mt-12">
               <Button 
                 onClick={handleDownload}
                 className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white"
@@ -149,7 +149,7 @@ const About = () => {
                 <ArrowDown className="mr-2 h-4 w-4" />
                 Download Corporate Overview (PDF)
               </Button>
-            </div>
+            </div> */}
           </div>
         </section>
 
@@ -208,7 +208,7 @@ const About = () => {
             </AnimatedSection>
           </div>
 
-          <AnimatedSection delay={400}>
+          {/* <AnimatedSection delay={400}>
             <div className="bg-cosmo-blue/5 p-8 md:p-12 rounded-2xl border border-cosmo-blue/20">
               <h3 className="text-2xl font-semibold mb-6 text-center">Our 2035 Milestones</h3>
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -230,7 +230,7 @@ const About = () => {
                 />
               </div>
             </div>
-          </AnimatedSection>
+          </AnimatedSection> */}
         </section>
 
         {/* CTA Section */}

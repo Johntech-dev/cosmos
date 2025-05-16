@@ -1,4 +1,3 @@
-
 import React from 'react';
 import type { FC } from 'react';
 import HeroSection from '@/components/ui/HeroSection';
@@ -322,7 +321,7 @@ const Contact: FC = () => {
                     </div>
                   </div>
 
-                  <div className="flex items-start">
+                  {/* <div className="flex items-start">
                     <div className="flex-shrink-0 mr-4">
                       <div className="bg-cosmo-blue/10 p-3 rounded-full">
                         <MapPin className="h-6 w-6 text-cosmo-blue" />
@@ -348,7 +347,7 @@ const Contact: FC = () => {
                         We typically respond within 24-48 hours
                       </p>
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </AnimatedSection>

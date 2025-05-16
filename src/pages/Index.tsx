@@ -1,4 +1,3 @@
-
 import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
@@ -11,7 +10,7 @@ const Index = () => {
     <div className="min-h-screen">
       <HeroSection
         title="Mind, Machines & the 4th Cultural Time Perception Shift"
-        subtitle="Redefining the Future of Resilient Intelligence for Enterprise & Government Leaders"
+        subtitle="Redefining the Future of Resilient Intelligence"
         description="Cosmo Lab pioneers Intelligence Amplification (IA)—technology that augments, rather than replaces, human expertise. By harnessing the 4th Cultural Time Perception Shift (4th CTPS), we synchronise people, machines, and critical systems in real time, driving mission-ready performance and ethical innovation."
         buttonText="Explore Solutions"
         buttonUrl="/solutions"
@@ -31,7 +30,12 @@ const Index = () => {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Discover how our groundbreaking approach can transform your organization's performance and resilience.
             </p>
+            <Button className="mt-6 bg-cosmo-blue hover:bg-cosmo-blue-dark text-white py-3 px-8">
+            <a href="/contact">Talk to Our Team</a>
+            </Button>
           </AnimatedSection>
+
+          
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <FeatureHighlight 
@@ -48,6 +52,7 @@ const Index = () => {
               title="Evergreen Protocol (Ethics)"
               description="Guarantee data sovereignty, sustainability, and compliance from day one."
             />
+            
           </div>
         </section>
 
