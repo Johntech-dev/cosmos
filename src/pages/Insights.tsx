@@ -8,51 +8,63 @@ import ArticleCard from '@/components/ui/ArticleCard';
 const Insights = () => {
   const featuredArticles = [
     {
-      title: "Work-Life Balance in the Age of Intelligence Amplification",
-      excerpt: "In an era of constant connectivity and accelerating change, achieving true work-life balance requires more than just time management—it demands a fundamental reimagining of how we integrate our professional and personal lives.",
+      title: "From Work-Life Balance to Work-Life Resonance",
+      excerpt: "The familiar quest for 'work-life balance' imagines two forces forever fighting for equal time. In practice that scale tips with every urgent email or family surprise. Cosmo Lab reframes the problem around work-life resonance—a state in which what you are doing and how you are wired move in the same rhythm.",
       date: "June 1, 2023",
       category: "Wellbeing",
       image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
-      url: "/article/work-life-balance"
+      url: "/article/work-life-resonance"
     },
     {
-      title: "The 4th CTPS: A Paradigm of Transformation",
-      excerpt: "What if time wasn't fixed—but fluid, adaptive, and alive? Explore how the 4th Cultural Time Perception Shift is reshaping how humans think, learn, collaborate, and thrive.",
+      title: "From Enforcement to Shared Awareness",
+      excerpt: "Traditional public-safety systems rely on prediction: analyse past incidents, flood 'hot spots' with patrols, and hope deterrence follows. The approach often magnifies mistrust because it focuses on where risk might occur but ignores how people actually feel in the moment.",
       date: "May 15, 2023",
-      category: "Research",
+      category: "Society",
       image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-      url: "/article/4th-ctps-paradigm"
+      url: "/article/shared-awareness"
     },
     {
-      title: "Intelligence Amplification: Unlocking Human Potential",
-      excerpt: "What happens when technology doesn't replace you—but elevates you? Explore how IA is reshaping how we think, feel, create, and grow.",
+      title: "Deep Time: Re-awakening Long-Range Awareness",
+      excerpt: "Digital culture compresses attention into two settings: now and too late. When every alert demands an instant reply, hours feel crowded and decades disappear from view. Cosmo Lab revives an older capacity—Deep Time—the sense that minutes, seasons, and millennia can coexist in a single thought.",
       date: "April 22, 2023",
-      category: "Technology",
+      category: "Research",
       image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      url: "/article/intelligence-amplification"
+      url: "/article/deep-time"
     },
     {
-      title: "Designing for Human-Machine Synergy",
-      excerpt: "What if your machine didn't just serve you—but understood you? Learn how Cosmo Lab designs cybernetic ecosystems where humans and machines amplify each other's intelligence.",
+      title: "Intelligence Amplification: Clearer Thinking Through Human-Centric Tech",
+      excerpt: "Most conversations about smart software focus on Artificial Intelligence—machines that analyse data and issue answers. Cosmo Lab works on a different frontier: Intelligence Amplification (IA), technology that expands the conditions in which human insight appears.",
       date: "March 30, 2023",
-      category: "Design",
+      category: "Technology",
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      url: "/article/human-machine-synergy"
+      url: "/article/intelligence-amplification"
     }
   ];
   
   const additionalArticles = [
     {
-      title: "Ethics in the Age of IA",
-      excerpt: "As technology becomes more intelligent, our responsibility must become more human. Explore how Cosmo Lab embeds ethics, data sovereignty, and cognitive agency into every layer of IA.",
-      url: "/article/ethics-in-ia",
+      title: "Human–Machine Synergy: Designing Responsive Cybernetic Ecologies",
+      excerpt: "Most technology still behaves like a power tool: wait for a command, do the task, fall silent. Cosmo Lab imagines a richer relationship—Human–Machine Synergy—in which devices sense your state, adapt their responses, and co-evolve with you over time.",
+      url: "/article/human-machine-synergy",
+      category: "Technology"
+    },
+    {
+      title: "Ethics by Design: Building Sovereign Technology from the Inside Out",
+      excerpt: "When software can read heart rhythms, infer mood, and reorder your task list, 'privacy settings' are no longer enough. Ethics must move from policy appendices into the source code itself.",
+      url: "/article/ethics-by-design",
       category: "Ethics"
     },
     {
-      title: "Social Transformation Systems: From Fragmentation to Wholeness",
-      excerpt: "Hyper-connectivity has made us faster but not more unified. Discover how Cosmo Lab builds Social Transformation Systems to restore coherence and catalyze collective intelligence.",
+      title: "Social Transformation Systems: Engineering Collective Coherence",
+      excerpt: "Group tools connect people faster than ever, yet meetings stall, online debates polarise, and communities fracture. Cosmo Lab addresses the gap with Social Transformation Systems (STS)—feedback frameworks that help groups feel themselves as a single, adaptive organism.",
       url: "/article/social-transformation",
       category: "Society"
+    },
+    {
+      title: "Cognitive Sovereignty: Protecting the Self in the Age of Augmentation",
+      excerpt: "When technology can sense pulse changes, predict preferences, and reorder your schedule, freedom is no longer just legal—it is neurocognitive. Cosmo Lab anchors that freedom in Cognitive Sovereignty: the un-transferable right to decide how your inner signals are captured, reflected, and acted upon.",
+      url: "/article/cognitive-sovereignty",
+      category: "Research"
     }
   ];
   

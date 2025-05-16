@@ -432,6 +432,331 @@ const Article = () => {
           True work-life balance is not a destination but a continuous journey of adjustment and growth. With Intelligence Amplification, we have the tools to make this journey more intentional and fulfilling, creating lives that are both productive and meaningful.
         </p>
       `
+    },
+    'work-life-resonance': {
+      title: "From Work-Life Balance to Work-Life Resonance",
+      author: "Cosmo Lab Research Team",
+      date: "June 1, 2023",
+      readTime: "7 min read",
+      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      content: `
+        <p class="lead mb-8">
+          The familiar quest for "work-life balance" imagines two forces forever fighting for equal time. In practice that scale tips with every urgent email or family surprise. Cosmo Lab reframes the problem around work-life resonance—a state in which what you are doing and how you are wired move in the same rhythm.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Quick-Read Overview</h3>
+        <p class="mb-6">
+          Three elements make the model work:
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li>Personal Cognitive Computing (PCC) – a user-owned software layer that observes, reflects, and adapts to your current mental bandwidth.</li>
+          <li>EchoX – the Evolutionary Cognitive Horizon Orchestrator inside PCC; it tracks how wide (or narrow) your attention can safely stretch at this moment.</li>
+          <li>Time Perception Mirroring (TPM) – a method that senses subtle markers of your internal clock—heart-rate variability, breathing cadence, micro-pauses—and shows you when each type of task is most likely to feel effortless rather than forced.</li>
+        </ul>
+        <p class="mb-6">
+          Together they replace static schedules with living cues. Instead of telling you how long to work, the system helps you decide when to create, collaborate, reflect, or rest—so effort and ease alternate like notes in a well-tuned melody.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Deep-Dive Read</h3>
+        <h4 class="font-bold text-xl mt-6 mb-4">Why Balance Became a Losing Game</h4>
+        <p class="mb-6">
+          Balance presumes that more control over the calendar equals more freedom. Yet smartphones and global workflows have erased clear boundaries, turning control into constant micro-management. Resonance trades control for alignment: match tasks to the body-mind's natural waves and the day starts to carry you instead of the other way around.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">The Architecture of Personal Cognitive Computing</h4>
+        <p class="mb-4"><strong>Sensing (TPM)</strong></p>
+        <p class="mb-6">
+          Lightweight, consent-based signals—heart-rate variability, breath rhythm, keystroke cadence—reveal your internal tempo.
+        </p>
+
+        <p class="mb-4"><strong>Modelling (EchoX)</strong></p>
+        <p class="mb-6">
+          EchoX converts those signals into a Cognitive Horizon: a real-time picture of how much focus, creativity, or sociability you can deploy without strain.
+        </p>
+
+        <p class="mb-4"><strong>Reflecting (PCC Interface)</strong></p>
+        <p class="mb-6">
+          The PCC dashboard surfaces that horizon in plain language—"wide," "steady," or "tight"—and suggests matching actions: protect deep work, switch modes, or insert a micro-reset.
+        </p>
+        <p class="mb-6">
+          Nothing is prescribed; you remain the author. The system simply keeps a mirror in view.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Three Fundamental States</h4>
+        <div class="mb-6">
+          <p class="mb-4"><strong>State: Intensity</strong></p>
+          <ul class="mb-4 space-y-2">
+            <li>Horizon Shape: very narrow; energy spiking</li>
+            <li>Optimal Move: 60-second reset, slow breathing, short walk</li>
+          </ul>
+
+          <p class="mb-4"><strong>State: Dissonance</strong></p>
+          <ul class="mb-4 space-y-2">
+            <li>Horizon Shape: moderate width; task feels off-beat</li>
+            <li>Optimal Move: swap to activity that fits current rhythm or tweak environment</li>
+          </ul>
+
+          <p class="mb-4"><strong>State: Coherence</strong></p>
+          <ul class="mb-4 space-y-2">
+            <li>Horizon Shape: wide and stable</li>
+            <li>Optimal Move: defend the window for deep creation or vital dialogue</li>
+          </ul>
+        </div>
+        <p class="mb-6 italic">These states are not diagnoses; they are navigational aids.</p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Designing a Resonant Day with PCC</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Pulse Mapping</strong> – Run TPM passively for a week to identify natural peaks and troughs.</li>
+          <li><strong>Resonance Windows</strong> – Drag recurring tasks onto the map where they align with the discovered peaks.</li>
+          <li><strong>Micro-Renewal Cues</strong> – EchoX offers minute-long resets just before predicted dips.</li>
+          <li><strong>Evening Reflection</strong> – A one-question check-in ("Did work feel light, average, or heavy?") fine-tunes tomorrow's forecast.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Scaling to Teams</h4>
+        <p class="mb-6">
+          When several colleagues share only the shape of their horizons (never raw biometrics), PCC finds overlapping resonance windows for meetings and shields mismatched ones for solo focus. Early pilots show fewer after-hours messages and richer collaboration sessions.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Ethical Foundations</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>User sovereignty</strong> – Raw data never leaves personal devices unless explicitly shared.</li>
+          <li><strong>Transparent logic</strong> – Every suggestion carries a "why" link that explains the underlying pattern.</li>
+          <li><strong>Revocability</strong> – Mirroring can be paused or deleted without penalty.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">First Steps</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Individual:</strong> Notice one moment today when a task felt naturally easy. What time was it? What was your body doing? That's resonance.</li>
+          <li><strong>Organisation:</strong> Run a thirty-day micro-pilot with volunteers, gather both stories and metrics, then decide whether to expand.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Conclusion</h4>
+        <p class="mb-6">
+          Balance tries to hold competing weights steady; resonance lets them swing in harmony. By combining Personal Cognitive Computing, EchoX, and Time Perception Mirroring, Cosmo Lab offers a practical path from scheduling fatigue to rhythmic flow. If the idea resonates, we're ready to help you prototype a tuned-in workday.
+        </p>
+      `
+    },
+    'shared-awareness': {
+      title: "From Enforcement to Shared Awareness",
+      author: "Cosmo Lab Research Team",
+      date: "May 15, 2023",
+      readTime: "8 min read",
+      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      content: `
+        <p class="lead mb-8">
+          Traditional public-safety systems rely on prediction: analyse past incidents, flood "hot spots" with patrols, and hope deterrence follows. The approach often magnifies mistrust because it focuses on where risk might occur but ignores how people actually feel in the moment.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Quick-Read Overview</h3>
+        <p class="mb-6">
+          Cosmo Lab proposes a reflective alternative. We treat safety as a collective rhythm—a pattern of emotions, perceptions, and interactions that can drift into tension or settle into calm. Three building blocks enable the shift:
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li>Personal Cognitive Computing (PCC) – lightweight, user-owned software that reflects each participant's current bandwidth for composure and dialogue.</li>
+          <li>EchoX – the Evolutionary Cognitive Horizon Orchestrator inside PCC; it models how open or compressed the shared attention field is at any moment.</li>
+          <li>Time Perception Mirroring (TPM) – a sensing method that detects subtle timing cues (voice cadence, motion pace, heart-rate variability) and shows when an encounter is ready for calm negotiation or needs a brief reset.</li>
+        </ul>
+        <p class="mb-6">
+          Instead of forecasting crime, the system mirrors the collective state in real time. Officers, residents, and mediators see the same reflection, allowing everyone to adjust behaviour before tension hardens into conflict.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Deep-Dive Read</h3>
+        <h4 class="font-bold text-xl mt-6 mb-4">Why Predict-and-Control Falls Short</h4>
+        <p class="mb-6">
+          Predictive analytics map historical events onto the future, freezing yesterday's biases into tomorrow's patrol routes. Communities on the receiving end often feel pre-judged, which itself raises stress. Reflection flips the lens: it asks what is happening right now and invites all parties to co-regulate.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Public Safety as a Temporal Ecology</h4>
+        <p class="mb-6">
+          Stress spreads at the speed of a glance; calm can, too. Cities are networks of nervous systems. When those systems align, safety emerges naturally. When they drift out of phase, small misunderstandings escalate quickly. The task is therefore to sense rhythm and restore coherence—not to impose control.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">The Architecture of Reflective Safety</h4>
+        <p class="mb-4"><strong>Sensing — Time Perception Mirroring</strong></p>
+        <p class="mb-6">
+          Consent-based microphones, wearables, or street-level nodes collect coarse timing signals: changes in speech tempo, group movement, heart-rate ranges. No identifying data leaves the device.
+        </p>
+
+        <p class="mb-4"><strong>Modelling — EchoX</strong></p>
+        <p class="mb-6">
+          EchoX translates those signals into a Collective Horizon—a real-time gauge of how much shared attention and composure exist. A widening horizon signals readiness for dialogue; a narrowing one signals mounting strain.
+        </p>
+
+        <p class="mb-4"><strong>Reflecting — PCC Interface</strong></p>
+        <p class="mb-6">
+          The PCC dashboard displays a simple colour or tone—green (coherence), amber (dissonance), red (compression)—visible to officers and residents alike. Because the mirror is symmetric, no side "reads" the other from a distance; everyone reads the atmosphere together.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Three Archetypal States</h4>
+        <div class="mb-6">
+          <p class="mb-4"><strong>State: Compression</strong></p>
+          <ul class="mb-4 space-y-2">
+            <li>Collective Signature: Voices sharpen, body language closes, response times shorten.</li>
+            <li>Recommended Move: Reduce sensory load, pause conversation, invite neutral party.</li>
+          </ul>
+
+          <p class="mb-4"><strong>State: Dissonance</strong></p>
+          <ul class="mb-4 space-y-2">
+            <li>Collective Signature: Participants speak past each other; stress oscillates.</li>
+            <li>Recommended Move: Slow exchanges, restate intentions, re-establish common ground.</li>
+          </ul>
+
+          <p class="mb-4"><strong>State: Coherence</strong></p>
+          <ul class="mb-4 space-y-2">
+            <li>Collective Signature: Speech and pacing align, humour re-appears.</li>
+            <li>Recommended Move: Proceed with discussion, confirm agreements, reinforce respect.</li>
+          </ul>
+        </div>
+        <p class="mb-6 italic">These states describe the temperature of the interaction, not the character of individuals.</p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Designing the Reflective Loop</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Ambient Reflection</strong> – Street lights, wearable displays, or vehicle dashboards show the colour in real time.</li>
+          <li><strong>Guided Adjustment</strong> – Training links each colour to a stance: softer tone, stepped-back posture, or brief listening pause.</li>
+          <li><strong>Shared Debrief</strong> – After the encounter, anonymised trend lines reveal which moves restored coherence fastest. Communities refine their own playbook.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Collective Benefits</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Earlier De-Escalation</strong> – Visual cues prompt self-regulation before commands are issued.</li>
+          <li><strong>Distributed Responsibility</strong> – Safety becomes a joint task, not a unilateral order.</li>
+          <li><strong>Transparent Logic</strong> – Everyone can trace each colour shift to observable patterns—no hidden scoring.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Ethical Guardrails</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Minimal Data</strong> – Only the timing of behaviour, never the content, is processed.</li>
+          <li><strong>Local Processing</strong> – Raw signals stay on edge devices; only aggregated horizon width travels.</li>
+          <li><strong>Shared Governance</strong> – Residents, responders, and civic leaders co-set thresholds and review logs.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Implementation Path</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Community Dialogue</strong> – Align goals and boundaries before any sensor is deployed.</li>
+          <li><strong>Prototype Walk-Through</strong> – Use volunteers to rehearse scenarios and fine-tune colour cues.</li>
+          <li><strong>Micro-Pilot</strong> – Equip one street or one shift; collect qualitative stories alongside metrics.</li>
+          <li><strong>Iterate & Expand</strong> – Scale only if reflection demonstrably lowers tension and raises trust.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Conclusion</h4>
+        <p class="mb-6">
+          Prediction tries to outguess disorder; reflection helps communities outgrow it. By combining Personal Cognitive Computing, EchoX, and Time Perception Mirroring, public safety shifts from enforcing compliance to nurturing coherence. If this theoretical approach resonates with your city or organisation, Cosmo Lab is ready to explore a pilot together.
+        </p>
+      `
+    },
+    'deep-time': {
+      title: "Deep Time: Re-awakening Long-Range Awareness",
+      author: "Cosmo Lab Research Team",
+      date: "April 22, 2023",
+      readTime: "9 min read",
+      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      content: `
+        <p class="lead mb-8">
+          Digital culture compresses attention into two settings: now and too late. When every alert demands an instant reply, hours feel crowded and decades disappear from view. Cosmo Lab revives an older capacity—Deep Time—the sense that minutes, seasons, and millennia can coexist in a single thought.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Quick-Read Overview</h3>
+        <p class="mb-6">
+          Three components give the idea practical form:
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li>Personal Cognitive Computing (PCC) — a user-controlled layer that notices how far (or near) your attention is currently reaching.</li>
+          <li>EchoX — the Evolutionary Cognitive Horizon Orchestrator inside PCC; it measures the "width" of your temporal horizon in real time.</li>
+          <li>Time Perception Mirroring (TPM) — a sensing method that tracks subtle bodily rhythms—breath pacing, heart-rate variability, gaze pauses—to reveal when the mind is ready to widen or needs to zoom in.</li>
+        </ul>
+        <p class="mb-6">
+          Instead of nagging you to slow down, the system holds up a mirror. When the horizon narrows, a cue might invite a pause, a soundscape, or a story fragment that re-anchors thought in a longer arc. When the horizon widens, distractions are quietly blocked so reflection can deepen.
+        </p>
+
+        <h3 class="font-bold text-2xl mt-8 mb-4">Deep-Dive Read</h3>
+        <h4 class="font-bold text-xl mt-6 mb-4">The Compression of the Present</h4>
+        <p class="mb-6">
+          Economic and social platforms reward speed: trades per millisecond, posts per scroll. That temporal compression traps decision-makers in reactive loops. Short-term gains eclipse long-term costs; personal meaning erodes under perpetual urgency. Deep Time offers an antidote: it restores breadth without rejecting modern pace.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">A Layered Model of Time</h4>
+        <div class="mb-6">
+          <table class="w-full mb-6">
+            <thead>
+              <tr>
+                <th class="text-left p-2">Layer</th>
+                <th class="text-left p-2">Cognitive Focus</th>
+                <th class="text-left p-2">Typical Span</th>
+                <th class="text-left p-2">Common Value</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="p-2">Immediate</td>
+                <td class="p-2">survival, reflex</td>
+                <td class="p-2">seconds–minutes</td>
+                <td class="p-2">agility</td>
+              </tr>
+              <tr>
+                <td class="p-2">Narrative</td>
+                <td class="p-2">identity, goals</td>
+                <td class="p-2">hours–years</td>
+                <td class="p-2">meaning</td>
+              </tr>
+              <tr>
+                <td class="p-2">Ancestral</td>
+                <td class="p-2">culture, lineage</td>
+                <td class="p-2">decades–centuries</td>
+                <td class="p-2">belonging</td>
+              </tr>
+              <tr>
+                <td class="p-2">Planetary</td>
+                <td class="p-2">ecology, cosmos</td>
+                <td class="p-2">millennia+</td>
+                <td class="p-2">stewardship</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="italic">Healthy cognition moves among layers. Compression locks us at the top; Deep Time re-opens the lower three.</p>
+        </div>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">How PCC + EchoX + TPM Make It Work</h4>
+        <p class="mb-4"><strong>Sensing (TPM)</strong></p>
+        <p class="mb-6">
+          Micro-fluctuations in breathing and heart rhythm shift as attention toggles layers. TPM captures those signals—always with explicit consent.
+        </p>
+
+        <p class="mb-4"><strong>Modelling (EchoX)</strong></p>
+        <p class="mb-6">
+          EchoX converts raw signals into a Temporal Horizon: a real-time gauge of how far thought currently spans.
+        </p>
+
+        <p class="mb-4"><strong>Reflecting (PCC Dashboard)</strong></p>
+        <p class="mb-6">
+          The interface shows a simple indicator—narrow, balanced, or wide—and offers optional prompts matched to the state. Crucially, it never forces a practice; the user steers.
+        </p>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Applying Deep Time</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Education</strong> — Courses paced to seasonal or lunar cycles help students link facts to context; EchoX locks notification silence during reflection blocks.</li>
+          <li><strong>Climate Action</strong> — Dashboards display carbon goals on a 100-year arc; TPM cues collective pauses when urgency slides into despair, keeping resolve steady.</li>
+          <li><strong>Leadership & Strategy</strong> — Quarterly decisions are tested against decade-scale scenarios; when EchoX registers narrowed horizons during high-stakes talks, a two-minute reset prevents rash trade-offs.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Cultivating the Practice</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Anchor Rituals</strong> — Begin meetings with a reference to events older than any attendee or goals beyond anyone's tenure.</li>
+          <li><strong>Depth Windows</strong> — Schedule protected spans where PCC blocks rapid-fire pings, letting reflection mature.</li>
+          <li><strong>Shared Chronicle</strong> — Maintain a living timeline of past choices and their ripples; EchoX highlights patterns your team might forget.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Ethical Grounding</h4>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Minimal capture</strong> — Only horizon-width metrics leave the device, never raw biometrics.</li>
+          <li><strong>Explainable cues</strong> — Each prompt cites the pattern that triggered it ("breath pace shortened 20 %, horizon narrowing").</li>
+          <li><strong>Revocable mirror</strong> — Deep Time cannot be coerced; users can silence reflection instantly.</li>
+        </ul>
+
+        <h4 class="font-bold text-xl mt-6 mb-4">Conclusion</h4>
+        <p class="mb-6">
+          Fast technology on a slow planet demands minds that can stretch time, not just fill it. By weaving Personal Cognitive Computing, EchoX, and Time Perception Mirroring, Cosmo Lab turns Deep Time from philosophy into daily practice—helping individuals, teams, and whole communities act with agility and foresight. If expanding temporal horizons sounds useful in your work, we're ready to explore the next step with you.
+        </p>
+      `
     }
   };
 
