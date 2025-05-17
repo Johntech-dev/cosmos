@@ -4,10 +4,17 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 import FeatureHighlight from '@/components/ui/FeatureHighlight';
+import SEO from '@/components/SEO';
 
 const Index = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Cosmo Lab - Mind, Machines & the 4th Cultural Time Perception Shift"
+        description="Cosmo Lab pioneers Intelligence Amplification (IA)—technology that augments, rather than replaces, human expertise. By harnessing the 4th Cultural Time Perception Shift (4th CTPS), we synchronise people, machines, and critical systems in real time."
+        keywords={['Intelligence Amplification', '4th CTPS', 'Human-Machine Synergy', 'Cognitive Evolution', 'Ethical Innovation']}
+        url="https://cosmolab.cc"
+      />
       <HeroSection
         title="Mind, Machines & the 4th Cultural Time Perception Shift"
         subtitle="Redefining the Future of Resilient Intelligence"

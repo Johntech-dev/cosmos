@@ -1,8 +1,8 @@
-
 import { useLocation } from "react-router-dom";
 import { useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Home, ArrowLeft } from "lucide-react";
+import SEO from "@/components/SEO";
 
 const NotFound = () => {
   const location = useLocation();
@@ -16,6 +16,12 @@ const NotFound = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-b from-white to-gray-50 px-4">
+      <SEO
+        title="Page Not Found - Cosmo Lab"
+        description="The page you are looking for could not be found. Please check the URL or return to the homepage."
+        keywords={['404', 'Page Not Found', 'Error']}
+        url={`https://cosmolab.cc${location.pathname}`}
+      />
       <div className="max-w-md w-full">
         <div className="text-center mb-8">
           <div className="relative">

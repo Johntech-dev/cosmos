@@ -2,14 +2,21 @@ import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowLeft, Scale, Shield, FileText, Link, Brain, Mail } from 'lucide-react';
+import { ArrowLeft, Scale, Shield, FileText, Link, Brain, Mail, Users, Globe, Cookie, Lock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const TermsOfService = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title="Terms of Service - Cosmo Lab"
+        description="Read Cosmo Lab's Terms of Service to understand the terms and conditions governing your use of our services and website."
+        keywords={['Terms of Service', 'Terms and Conditions', 'Legal Terms', 'User Agreement', 'Service Terms']}
+        url="https://cosmolab.cc/terms-of-service"
+      />
       <HeroSection
         title="Terms of Service"
         subtitle="Legal"

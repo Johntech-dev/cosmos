@@ -4,6 +4,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const FAQ = () => {
   const navigate = useNavigate();
@@ -94,6 +95,12 @@ const FAQ = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Frequently Asked Questions - Cosmo Lab"
+        description="Find answers to common questions about the Evergreen Initiative, Intelligence Amplification, and the 4th Cultural Time Perception Shift."
+        keywords={['FAQ', 'Frequently Asked Questions', 'Intelligence Amplification', '4th CTPS', 'Evergreen Initiative']}
+        url="https://cosmolab.cc/faq"
+      />
       <HeroSection
         title="Frequently Asked Questions"
         subtitle="FAQ"

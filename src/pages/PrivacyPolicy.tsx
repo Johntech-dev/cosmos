@@ -4,12 +4,19 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Shield, Users, Globe, Cookie, Lock } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const PrivacyPolicy = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title="Privacy Policy - Cosmo Lab"
+        description="Learn how Cosmo Lab protects and handles your data. Our privacy policy outlines our commitment to data protection and user privacy."
+        keywords={['Privacy Policy', 'Data Protection', 'User Privacy', 'Data Security', 'Privacy Rights']}
+        url="https://cosmolab.cc/privacy-policy"
+      />
       <HeroSection
         title="Privacy Policy"
         subtitle="Legal"

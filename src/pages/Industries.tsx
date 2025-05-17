@@ -1,14 +1,20 @@
-
 import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, FileText, Globe, BookOpen, Activity, Shield, Rocket, Building } from 'lucide-react';
 import FeatureColumn from '@/components/ui/FeatureColumn';
+import SEO from '@/components/SEO';
 
 const Industries = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Industry Solutions - Cosmo Lab"
+        description="Discover how Cosmo Lab's Intelligence Amplification technologies are transforming operations across healthcare, government, smart cities, and corporate innovation."
+        keywords={['Industry Solutions', 'Healthcare', 'Government', 'Smart Cities', 'Corporate Innovation', 'Intelligence Amplification']}
+        url="https://cosmolab.cc/industries"
+      />
       <HeroSection
         title={
           <>

@@ -7,6 +7,7 @@ import FeatureTable from '@/components/ui/FeatureTable';
 import FeatureHighlight from '@/components/ui/FeatureHighlight';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import SEO from '@/components/SEO';
 
 const About = () => {
   const contentRef = useRef<HTMLDivElement>(null);
@@ -77,6 +78,12 @@ const About = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="About Cosmo Lab - Pioneering Intelligence Amplification"
+        description="Learn about Cosmo Lab's mission to revolutionize human-machine collaboration through Intelligence Amplification and the 4th Cultural Time Perception Shift."
+        keywords={['About Cosmo Lab', 'Intelligence Amplification', '4th CTPS', 'Human-Machine Collaboration', 'Cognitive Evolution']}
+        url="https://cosmolab.cc/about"
+      />
       <HeroSection
         title="Systemic Harmony & Adaptive Intelligence"
         subtitle="About Cosmo Lab"

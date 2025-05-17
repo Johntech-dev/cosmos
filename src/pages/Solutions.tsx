@@ -1,4 +1,3 @@
-
 import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
@@ -6,10 +5,17 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight, Zap, Clock, Sword, Lock, Users, Layers, BarChart } from 'lucide-react';
 import FeatureColumn from '@/components/ui/FeatureColumn';
 import FeatureTable from '@/components/ui/FeatureTable';
+import SEO from '@/components/SEO';
 
 const Solutions = () => {
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Solutions - Intelligence Amplification Technologies"
+        description="Discover Cosmo Lab's innovative technologies that amplify human intelligence and synchronize human-machine interaction for superior outcomes."
+        keywords={['Intelligence Amplification', 'Human-Machine Synergy', 'Cognitive Technologies', '4th CTPS Solutions', 'Adaptive Systems']}
+        url="https://cosmolab.cc/solutions"
+      />
       <HeroSection
         title={
           <>

@@ -6,6 +6,7 @@ import { Button } from '@/components/ui/button';
 import { ArrowLeft, Download, BookOpen, Users, Brain, Clock } from 'lucide-react';
 import jsPDF from 'jspdf';
 import html2canvas from 'html2canvas';
+import SEO from '@/components/SEO';
 
 const WhitePaper = () => {
   const navigate = useNavigate();
@@ -107,6 +108,12 @@ const WhitePaper = () => {
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title="White Paper - Cosmo Lab"
+        description="Explore our comprehensive white paper on Intelligence Amplification and the 4th Cultural Time Perception Shift. Learn how we're guiding organizations into the future."
+        keywords={['White Paper', 'Intelligence Amplification', '4th CTPS', 'Research', 'Technology']}
+        url="https://cosmolab.cc/white-paper"
+      />
       <HeroSection
         title="Cosmo Lab White Paper"
         subtitle="White Paper"

@@ -4,6 +4,7 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, BookOpen, Clock, Users, FileText } from 'lucide-react';
 import ArticleCard from '@/components/ui/ArticleCard';
+import SEO from '@/components/SEO';
 
 const Insights = () => {
   const featuredArticles = [
@@ -101,6 +102,12 @@ const Insights = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Insights & Research - Cosmo Lab"
+        description="Explore our latest research, thought leadership, and insights on Intelligence Amplification and the 4th Cultural Time Perception Shift."
+        keywords={['Intelligence Amplification Research', '4th CTPS Insights', 'Cognitive Evolution', 'Human-Machine Collaboration', 'Future of Work']}
+        url="https://cosmolab.cc/insights"
+      />
       <HeroSection
         title={
           <>

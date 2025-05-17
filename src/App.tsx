@@ -4,6 +4,8 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
+import { HelmetProvider } from 'react-helmet-async';
+import SEO from './components/SEO';
 
 import Index from "./pages/Index";
 import About from "./pages/About";
@@ -24,7 +26,7 @@ import { cookieManager } from "./utils/cookieManager";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import EvergreenProtocol from "./pages/EvergreenProtocol";
-import Careers from "./pages/Careers";
+import Careers from "./pages/careers";
 
 // ScrollToTop component that will scroll to top on route changes
 const ScrollToTop = () => {
@@ -45,40 +47,43 @@ const App = () => {
   }, []);
 
   return (
-    <QueryClientProvider client={queryClient}>
-      <TooltipProvider>
-        <Toaster />
-        <Sonner />
-        <BrowserRouter>
-          <Navbar />
-          <ScrollToTop />
-          <div className="pt-20">
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/solutions" element={<Solutions />} />
-              <Route path="/industries" element={<Industries />} />
-              <Route path="/insights" element={<Insights />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/article/:slug" element={<Article />} />
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/white-paper" element={<WhitePaper />} />
-              <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
-              <Route path="/careers" element={<Careers />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/cookie-policy" element={<CookiePolicy />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </div>
-          <Footer />
-          <CookieConsent
-            onAcceptAll={cookieManager.enableAnalytics}
-            onEssentialOnly={cookieManager.disableAnalytics}
-          />
-        </BrowserRouter>
-      </TooltipProvider>
-    </QueryClientProvider>
+    <HelmetProvider>
+      <QueryClientProvider client={queryClient}>
+        <TooltipProvider>
+          <SEO />
+          <Toaster />
+          <Sonner />
+          <BrowserRouter>
+            <Navbar />
+            <ScrollToTop />
+            <div className="pt-20">
+              <Routes>
+                <Route path="/" element={<Index />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/solutions" element={<Solutions />} />
+                <Route path="/industries" element={<Industries />} />
+                <Route path="/insights" element={<Insights />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/article/:slug" element={<Article />} />
+                <Route path="/faq" element={<FAQ />} />
+                <Route path="/white-paper" element={<WhitePaper />} />
+                <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
+                <Route path="/careers" element={<Careers />} />
+                <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                <Route path="/cookie-policy" element={<CookiePolicy />} />
+                <Route path="/terms-of-service" element={<TermsOfService />} />
+                <Route path="*" element={<NotFound />} />
+              </Routes>
+            </div>
+            <Footer />
+            <CookieConsent
+              onAcceptAll={cookieManager.enableAnalytics}
+              onEssentialOnly={cookieManager.disableAnalytics}
+            />
+          </BrowserRouter>
+        </TooltipProvider>
+      </QueryClientProvider>
+    </HelmetProvider>
   );
 };
 

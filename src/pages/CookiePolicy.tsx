@@ -4,12 +4,19 @@ import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
 import { ArrowLeft, Cookie, Settings, Shield, Mail } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
+import SEO from '@/components/SEO';
 
 const CookiePolicy = () => {
   const navigate = useNavigate();
 
   return (
     <div className="min-h-screen bg-gray-50">
+      <SEO
+        title="Cookie Policy - Cosmo Lab"
+        description="Learn how Cosmo Lab uses cookies to enhance your experience while respecting your privacy. Our cookie policy explains our use of cookies and similar technologies."
+        keywords={['Cookie Policy', 'Cookie Usage', 'Privacy', 'Data Protection', 'Cookie Management']}
+        url="https://cosmolab.cc/cookie-policy"
+      />
       <HeroSection
         title="Cookie Policy"
         subtitle="Legal"

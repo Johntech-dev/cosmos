@@ -2,10 +2,17 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Mail } from 'lucide-react';
+import SEO from '@/components/SEO';
 
 const Careers = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
+      <SEO
+        title="Careers - Cosmo Lab"
+        description="Join Cosmo Lab in building the future of Intelligence Amplification. We're looking for passionate individuals who want to make a real impact."
+        keywords={['Careers', 'Jobs', 'Intelligence Amplification', 'Innovation', 'Technology']}
+        url="https://cosmolab.cc/careers"
+      />
       <div className="container mx-auto px-4 md:px-6 py-20">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

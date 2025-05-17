@@ -29,6 +29,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
+import SEO from '@/components/SEO';
 
 const formSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -97,6 +98,12 @@ const Contact: FC = () => {
 
   return (
     <div className="min-h-screen">
+      <SEO
+        title="Contact Us - Cosmo Lab"
+        description="Get in touch with Cosmo Lab for RFPs, pilots, and strategic engagements. Our team is ready to help you transform your organization with Intelligence Amplification."
+        keywords={['Contact', 'RFPs', 'Pilots', 'Strategic Engagement', 'Intelligence Amplification']}
+        url="https://cosmolab.cc/contact"
+      />
       <HeroSection
         title={
           <>
