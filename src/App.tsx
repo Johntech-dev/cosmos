@@ -15,6 +15,11 @@ import NotFound from "./pages/NotFound";
 import Article from "./pages/Article";
 import FAQ from "./pages/FAQ";
 import WhitePaper from "./pages/WhitePaper";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import CookiePolicy from "./pages/CookiePolicy";
+import TermsOfService from "./pages/TermsOfService";
+import CookieConsent from "./components/ui/CookieConsent";
+import { cookieManager } from "./utils/cookieManager";
 
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
@@ -34,34 +39,47 @@ const ScrollToTop = () => {
 
 const queryClient = new QueryClient();
 
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Navbar />
-        <ScrollToTop />
-        <div className="pt-20">
-          <Routes>
-            <Route path="/" element={<Index />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/solutions" element={<Solutions />} />
-            <Route path="/industries" element={<Industries />} />
-            <Route path="/insights" element={<Insights />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/article/:slug" element={<Article />} />
-            <Route path="/faq" element={<FAQ />} />
-            <Route path="/white-paper" element={<WhitePaper />} />
-            <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
-            <Route path="/careers" element={<Careers />} />
-            <Route path="*" element={<NotFound />} />
-          </Routes>
-        </div>
-        <Footer />
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+const App = () => {
+  useEffect(() => {
+    cookieManager.initialize();
+  }, []);
+
+  return (
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Navbar />
+          <ScrollToTop />
+          <div className="pt-20">
+            <Routes>
+              <Route path="/" element={<Index />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/solutions" element={<Solutions />} />
+              <Route path="/industries" element={<Industries />} />
+              <Route path="/insights" element={<Insights />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/article/:slug" element={<Article />} />
+              <Route path="/faq" element={<FAQ />} />
+              <Route path="/white-paper" element={<WhitePaper />} />
+              <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
+              <Route path="/careers" element={<Careers />} />
+              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/cookie-policy" element={<CookiePolicy />} />
+              <Route path="/terms-of-service" element={<TermsOfService />} />
+              <Route path="*" element={<NotFound />} />
+            </Routes>
+          </div>
+          <Footer />
+          <CookieConsent
+            onAcceptAll={cookieManager.enableAnalytics}
+            onEssentialOnly={cookieManager.disableAnalytics}
+          />
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
+  );
+};
 
 export default App;

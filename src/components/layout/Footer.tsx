@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -73,9 +72,9 @@ const Footer = () => {
                Cosmo Lab  powered by Fourth Gate LLE, All rights reserved &copy; {new Date().getFullYear()}
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
-              <a href="#" className="hover:text-cosmo-blue-light transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-cosmo-blue-light transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-cosmo-blue-light transition-colors">Cookie Policy</a>
+              <Link to="/privacy-policy" className="hover:text-cosmo-blue-light transition-colors">Privacy Policy</Link>
+              <Link to="/terms-of-service" className="hover:text-cosmo-blue-light transition-colors">Terms of Service</Link>
+              <Link to="/cookie-policy" className="hover:text-cosmo-blue-light transition-colors">Cookie Policy</Link>
             </div>
           </div>
         </div>
