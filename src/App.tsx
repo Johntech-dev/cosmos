@@ -68,7 +68,6 @@ const App = () => {
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/white-paper" element={<WhitePaper />} />
                 <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
-                {/* <Route path="/careers" element={<Careerseers />} /> */}
                 <Route path="/careers" element={<Carrers />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/cookie-policy" element={<CookiePolicy />} />

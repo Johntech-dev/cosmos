@@ -1,8 +1,6 @@
-import React from 'react';
 import HeroSection from '@/components/ui/HeroSection';
 import AnimatedSection from '@/components/ui/AnimatedSection';
 import { Button } from '@/components/ui/button';
-import { ArrowRight, BookOpen, Clock, Users, FileText } from 'lucide-react';
 import ArticleCard from '@/components/ui/ArticleCard';
 import SEO from '@/components/SEO';
 
@@ -155,7 +153,6 @@ const Insights = () => {
                 key={article.title}
                 title={article.title}
                 excerpt={article.excerpt}
-                author={article.author}
                 date={article.date}
                 category={article.category}
                 image={article.image}
