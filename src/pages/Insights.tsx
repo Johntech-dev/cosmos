@@ -37,7 +37,7 @@ const Insights = () => {
       excerpt: "Most conversations about smart software focus on Artificial Intelligence—machines that analyse data and issue answers. Cosmo Lab works on a different frontier: Intelligence Amplification (IA), technology that expands the conditions in which human insight appears.",
       date: "March 30, 2023",
       category: "Technology",
-      image: "human-tinking.png",
+      image: "body.png",
       url: "/article/intelligence-amplification"
     },
     {

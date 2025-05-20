@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { Mail } from 'lucide-react';
 import SEO from '@/components/SEO';
 
-const Careers = () => {
+const Carrers = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-white to-gray-50">
       <SEO
@@ -80,4 +80,4 @@ const Careers = () => {
   );
 };
 
-export default Careers; 
+export default Carrers; 

@@ -26,8 +26,7 @@ import { cookieManager } from "./utils/cookieManager";
 import Navbar from "./components/layout/Navbar";
 import Footer from "./components/layout/Footer";
 import EvergreenProtocol from "./pages/EvergreenProtocol";
-import Careers from "./pages/careers";
-// import Careers from "./pages/careers";
+import Carrers from "./pages/Carrers";
 
 // ScrollToTop component that will scroll to top on route changes
 const ScrollToTop = () => {
@@ -69,7 +68,8 @@ const App = () => {
                 <Route path="/faq" element={<FAQ />} />
                 <Route path="/white-paper" element={<WhitePaper />} />
                 <Route path="/evergreen-protocol" element={<EvergreenProtocol />} />
-                <Route path="/careers" element={<Careers />} />
+                {/* <Route path="/careers" element={<Careerseers />} /> */}
+                <Route path="/careers" element={<Carrers />} />
                 <Route path="/privacy-policy" element={<PrivacyPolicy />} />
                 <Route path="/cookie-policy" element={<CookiePolicy />} />
                 <Route path="/terms-of-service" element={<TermsOfService />} />
