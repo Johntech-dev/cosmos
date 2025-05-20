@@ -13,7 +13,7 @@ const Insights = () => {
       excerpt: "The familiar quest for 'work-life balance' imagines two forces forever fighting for equal time. In practice that scale tips with every urgent email or family surprise. Cosmo Lab reframes the problem around work-life resonance—a state in which what you are doing and how you are wired move in the same rhythm.",
       date: "June 1, 2023",
       category: "Wellbeing",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      image: "work-balance.jpeg",
       url: "/article/work-life-resonance"
     },
     {
@@ -29,7 +29,7 @@ const Insights = () => {
       excerpt: "Digital culture compresses attention into two settings: now and too late. When every alert demands an instant reply, hours feel crowded and decades disappear from view. Cosmo Lab revives an older capacity—Deep Time—the sense that minutes, seasons, and millennia can coexist in a single thought.",
       date: "April 22, 2023",
       category: "Research",
-      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      image: "AdobeStock_800182196.jpeg",
       url: "/article/deep-time"
     },
     {
@@ -37,35 +37,53 @@ const Insights = () => {
       excerpt: "Most conversations about smart software focus on Artificial Intelligence—machines that analyse data and issue answers. Cosmo Lab works on a different frontier: Intelligence Amplification (IA), technology that expands the conditions in which human insight appears.",
       date: "March 30, 2023",
       category: "Technology",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      image: "human-tinking.png",
       url: "/article/intelligence-amplification"
-    }
-  ];
-  
-  const additionalArticles = [
+    },
     {
       title: "Human–Machine Synergy: Designing Responsive Cybernetic Ecologies",
+      date: "March 30, 2023",
       excerpt: "Most technology still behaves like a power tool: wait for a command, do the task, fall silent. Cosmo Lab imagines a richer relationship—Human–Machine Synergy—in which devices sense your state, adapt their responses, and co-evolve with you over time.",
       url: "/article/human-machine-synergy",
-      category: "Technology"
+      category: "Technology",
+     image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
     },
     {
       title: "Ethics by Design: Building Sovereign Technology from the Inside Out",
+      date: "March 30, 2023",
       excerpt: "When software can read heart rhythms, infer mood, and reorder your task list, 'privacy settings' are no longer enough. Ethics must move from policy appendices into the source code itself.",
-      url: "/article/ethics-by-design",
-      category: "Ethics"
+      url: "/article/ethics-in-ia",
+      category: "Ethics",
+      image:"etic-by-design.jpeg"
     },
+  ];
+  
+  const additionalArticles = [
+    // {
+    //   title: "Human–Machine Synergy: Designing Responsive Cybernetic Ecologies",
+    //   excerpt: "Most technology still behaves like a power tool: wait for a command, do the task, fall silent. Cosmo Lab imagines a richer relationship—Human–Machine Synergy—in which devices sense your state, adapt their responses, and co-evolve with you over time.",
+    //   url: "/article/human-machine-synergy",
+    //   category: "Technology"
+    // },
+    // {
+    //   title: "Ethics by Design: Building Sovereign Technology from the Inside Out",
+    //   excerpt: "When software can read heart rhythms, infer mood, and reorder your task list, 'privacy settings' are no longer enough. Ethics must move from policy appendices into the source code itself.",
+    //   url: "/article/ethics-by-design",
+    //   category: "Ethics"
+    // },
     {
       title: "Social Transformation Systems: Engineering Collective Coherence",
       excerpt: "Group tools connect people faster than ever, yet meetings stall, online debates polarise, and communities fracture. Cosmo Lab addresses the gap with Social Transformation Systems (STS)—feedback frameworks that help groups feel themselves as a single, adaptive organism.",
       url: "/article/social-transformation",
-      category: "Society"
+      category: "Society",
+      image: "social-transformation.png"
     },
     {
       title: "Cognitive Sovereignty: Protecting the Self in the Age of Augmentation",
       excerpt: "When technology can sense pulse changes, predict preferences, and reorder your schedule, freedom is no longer just legal—it is neurocognitive. Cosmo Lab anchors that freedom in Cognitive Sovereignty: the un-transferable right to decide how your inner signals are captured, reflected, and acted upon.",
       url: "/article/cognitive-sovereignty",
-      category: "Research"
+      category: "Research",
+      image: "low-angle-woman-posing-outdoors.jpg"
     }
   ];
   
@@ -75,19 +93,19 @@ const Insights = () => {
       title: "Agricultural Revolution",
       year: "10,000 BCE",
       description: "Shift from nomadic hunter-gathering to seasonal time perception",
-      image: "https://images.unsplash.com/photo-1464226184884-fa280b87c399?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "1stctps.jpeg"
     },
     {
       era: "2nd CTPS",
       title: "Industrial Revolution",
       year: "1760s",
       description: "Shift to mechanical time perception with clock-based scheduling",
-      image: "https://images.unsplash.com/photo-1618044733300-9472054094ee?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "2ndctps.jpeg"
     },
     {
       era: "3rd CTPS",
       title: "Digital Revolution",
-      year: "1980s",
+      year: "1950s",
       description: "Shift to always-on connectivity and acceleration of experience",
       image: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
     },
@@ -96,7 +114,7 @@ const Insights = () => {
       title: "Intelligence Revolution",
       year: "2020s",
       description: "Shift to adaptive, fluid time perception aligned with cognitive states",
-      image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      image: "4thctps.jpeg"
     }
   ];
 
@@ -155,6 +173,7 @@ const Insights = () => {
                 excerpt={article.excerpt}
                 category={article.category}
                 url={article.url}
+                image={article.image}
                 delay={100 * (index + featuredArticles.length)}
               />
             ))}

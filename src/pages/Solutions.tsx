@@ -70,7 +70,7 @@ const Solutions = () => {
                 machine-assisted insights.</p>
               </>
             }
-            imageUrl="/AdobeStock_1035057216.jpeg"
+            imageUrl="/echox.jpeg"
             imageAlt="echoX Platform"
           >
             <div className="space-y-4 mb-6">
@@ -174,7 +174,7 @@ const Solutions = () => {
                 move from fragmented silos to unified systems of resonance, driven by shared purpose and transparent feedback.</p>
               </>
             }
-            imageUrl="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+            imageUrl="/social.jpeg"
             imageAlt="Social Transformation Systems"
           >
             <div className="space-y-4 mb-6">

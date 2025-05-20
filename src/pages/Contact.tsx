@@ -30,6 +30,7 @@ import { useForm } from "react-hook-form";
 import * as z from "zod";
 import { useToast } from "@/hooks/use-toast";
 import SEO from '@/components/SEO';
+import emailjs from '@emailjs/browser';
 
 const formSchema = z.object({
   firstName: z.string().min(1, "First name is required"),
@@ -69,23 +70,33 @@ const Contact: FC = () => {
 
   async function onSubmit(data: FormValues) {
     try {
-      const response = await fetch('/api/contact', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(data),
-      });
+      const templateParams = {
+        from_name: `${data.firstName} ${data.lastName}`,
+        from_email: data.email,
+        organization: data.organization || 'Not specified',
+        project_scope: data.projectScope,
+        security_requirements: data.securityRequirements || 'Not specified',
+        message: data.message,
+        contact_method: data.contactMethod,
+      };
 
-      if (!response.ok) {
+      // Use import.meta.env for Vite projects
+      const response = await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        templateParams,
+        import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      );
+
+      if (response.status === 200) {
+        toast({
+          title: "Form submitted successfully",
+          description: "We'll get back to you soon!",
+        });
+        form.reset();
+      } else {
         throw new Error('Failed to send message');
       }
-
-      toast({
-        title: "Form submitted successfully",
-        description: "We'll get back to you soon!",
-      });
-      form.reset();
     } catch (error) {
       console.error('Error submitting form:', error);
       toast({

@@ -29,7 +29,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "May 15, 2023",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      image: "/AdobeStock_297815351.jpeg",
       content: `
         <p class="lead mb-8">
           The 4th Cultural Time Perception Shift represents humanity's move from experiencing time as an external force to mastering 
@@ -118,7 +118,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "April 22, 2023",
       readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      image: "/human-tinking.png",
       content: `
         <p class="lead mb-8">
           What happens when technology doesn't replace you—but elevates you? Intelligence Amplification (IA) is reshaping how we 
@@ -186,7 +186,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "March 30, 2023",
       readTime: "9 min read",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       content: `
         <p class="lead">
           What if your machine didn't just serve you—but understood you? Human-Machine Synergy is the new frontier of collaboration 
@@ -255,7 +255,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "March 15, 2023",
       readTime: "8 min read",
-      image: "https://images.unsplash.com/photo-1573164713988-8665fc963095?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      image: "/etic-by-design.jpeg",
       content: `
         <p class="lead">
           As technology becomes more intelligent, our responsibility must become more human. Explore how Cosmo Lab embeds ethics, 
@@ -319,7 +319,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "February 28, 2023",
       readTime: "10 min read",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      image: "/social-transformation.png",
       content: `
         <p class="lead">
           Hyper-connectivity has made us faster but not more unified. Discover how Cosmo Lab builds Social Transformation Systems 
@@ -382,7 +382,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "June 1, 2023",
       readTime: "7 min read",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      image: "/work-balance.jpeg",
       content: `
         <p class="lead mb-8">
           In an era of constant connectivity and accelerating change, achieving true work-life balance requires more than just time management—it demands a fundamental reimagining of how we integrate our professional and personal lives. Discover how Intelligence Amplification can help create harmony between productivity and well-being.
@@ -439,7 +439,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "June 1, 2023",
       readTime: "7 min read",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=871&q=80",
+      image: "/work-balance.jpeg",
       content: `
         <p class="lead mb-8">
           The familiar quest for "work-life balance" imagines two forces forever fighting for equal time. In practice that scale tips with every urgent email or family surprise. Cosmo Lab reframes the problem around work-life resonance—a state in which what you are doing and how you are wired move in the same rhythm.
@@ -650,7 +650,7 @@ const Article = () => {
       author: "Cosmo Lab Research Team",
       date: "April 22, 2023",
       readTime: "9 min read",
-      image: "https://images.unsplash.com/photo-1589254065878-42c9da997008?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      image: "/AdobeStock_800182196.jpeg",
       content: `
         <p class="lead mb-8">
           Digital culture compresses attention into two settings: now and too late. When every alert demands an instant reply, hours feel crowded and decades disappear from view. Cosmo Lab revives an older capacity—Deep Time—the sense that minutes, seasons, and millennia can coexist in a single thought.
@@ -756,6 +756,127 @@ const Article = () => {
         <h4 class="font-bold text-xl mt-6 mb-4">Conclusion</h4>
         <p class="mb-6">
           Fast technology on a slow planet demands minds that can stretch time, not just fill it. By weaving Personal Cognitive Computing, EchoX, and Time Perception Mirroring, Cosmo Lab turns Deep Time from philosophy into daily practice—helping individuals, teams, and whole communities act with agility and foresight. If expanding temporal horizons sounds useful in your work, we're ready to explore the next step with you.
+        </p>
+      `
+    },
+    'cognitive-sovereignty': {
+      title: "Cognitive Sovereignty: Protecting the Self in the Age of Augmentation",
+      author: "Cosmo Lab Research Team",
+      date: "July 8, 2024",
+      readTime: "12 min read",
+      image: "/low-angle-woman-posing-outdoors.jpg",
+      content: `
+        <p class="lead mb-8">
+          When technology can sense pulse changes, predict preferences, and reorder your schedule, freedom is no longer just legal—it is neurocognitive. Cosmo Lab anchors that freedom in Cognitive Sovereignty: the un-transferable right to decide how your inner signals are captured, reflected, and acted upon.
+        </p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Quick-Read Overview</h3>
+        <p class="mb-6">
+          Personal Cognitive Computing, EchoX, and Time Perception Mirroring for self-governing minds.
+        </p>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Personal Cognitive Computing (PCC):</strong> A local software vault that stores and processes your data first, keeping raw signals under your direct control.</li>
+          <li><strong>EchoX:</strong> The Evolutionary Cognitive Horizon Orchestrator within PCC; it converts rhythms into plain-language reflections only you can see unless you choose otherwise.</li>
+          <li><strong>Time Perception Mirroring (TPM):</strong> A sensing method that observes timing patterns—breath cadence, heart-rate variability, micro-pauses—never private content, showing when you are open, compressed, or in flow.</li>
+        </ul>
+        <p class="mb-6">
+          These layers uphold the Cognitive Rights Charter—five guarantees that you can pause mirroring, demand explanations, refuse predictive nudges, and erase your profile at will. If you want the full theoretical scaffold, continue to the deep dive.
+        </p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Deep-Dive Read</h3>
+        <h4 class="font-bold text-xl mt-6 mb-4">Why Classic Privacy Protections Fall Short</h4>
+        <p class="mb-6">
+          Biometric tech moves intimate signals from clinic to wristband; predictive models steer behaviour invisibly; "opt-in" checkboxes bury consent in fine print. True autonomy now requires continuous, granular control over sensing, modelling, and feedback.
+        </p>
+        <h3 class="font-bold text-2xl mt-8 mb-4">The Cognitive Rights Charter</h3>
+        <table class="w-full mb-6">
+          <thead>
+            <tr>
+              <th class="text-left p-2">Right</th>
+              <th class="text-left p-2">Operational Guarantee</th>
+              <th class="text-left p-2">Where It Lives</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">Temporal Consent</td>
+              <td class="p-2">Change data-sharing settings instantly, no feature lock-out.</td>
+              <td class="p-2">PCC settings panel</td>
+            </tr>
+            <tr>
+              <td class="p-2">Emotional Safety</td>
+              <td class="p-2">Algorithms may not amplify arousal for profit; TPM stabilises, never exploits.</td>
+              <td class="p-2">Sensor-to-cue pipeline</td>
+            </tr>
+            <tr>
+              <td class="p-2">Narrative Choice</td>
+              <td class="p-2">Select how reflections appear—analytics, metaphors, visuals.</td>
+              <td class="p-2">EchoX stance engine</td>
+            </tr>
+            <tr>
+              <td class="p-2">Predictive Opt-Out</td>
+              <td class="p-2">Disable foresight models that nudge behaviour.</td>
+              <td class="p-2">PCC model toggle</td>
+            </tr>
+            <tr>
+              <td class="p-2">Portability & Erasure</td>
+              <td class="p-2">Export or delete the entire profile in one action.</td>
+              <td class="p-2">Local data vault</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="font-bold text-2xl mt-8 mb-4">How PCC, EchoX & TPM Enforce Sovereignty</h3>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Sensing – TPM:</strong> Captures cadence, not content. The system knows your breath quickened, not why.</li>
+          <li><strong>Modelling – EchoX:</strong> Builds a Cognitive Horizon on-device; nothing leaves your hardware unless you share an abstract form (e.g., "team horizon: steady").</li>
+          <li><strong>Reflecting – PCC Interface:</strong> Every prompt carries a "why" link. One tap can mute, narrow, or delete any data stream—no questions asked.</li>
+        </ul>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Daily Life in a Sovereign System</h3>
+        <table class="w-full mb-6">
+          <thead>
+            <tr>
+              <th class="text-left p-2">Scenario</th>
+              <th class="text-left p-2">Right Exercised</th>
+              <th class="text-left p-2">User Experience</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="p-2">Mid-project stress spike</td>
+              <td class="p-2">Emotional Safety</td>
+              <td class="p-2">EchoX suggests a reset; user accepts, horizon widens without ad-driven dopamine tricks.</td>
+            </tr>
+            <tr>
+              <td class="p-2">Sensitive negotiation</td>
+              <td class="p-2">Predictive Opt-Out</td>
+              <td class="p-2">User pauses foresight models; PCC stops scenario nudges until re-enabled.</td>
+            </tr>
+            <tr>
+              <td class="p-2">Travel to new region</td>
+              <td class="p-2">Narrative Choice</td>
+              <td class="p-2">User switches reflection style to visual icons for quick scanning on the move.</td>
+            </tr>
+            <tr>
+              <td class="p-2">End of internship</td>
+              <td class="p-2">Portability & Erasure</td>
+              <td class="p-2">Entire profile exported to USB, then wiped locally in under 10 seconds.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Institutional Adoption Path</h3>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Charter Workshop:</strong> Stakeholders adapt the Cognitive Rights Charter to local policy.</li>
+          <li><strong>Pilot with Audit Hooks:</strong> Deploy PCC+EchoX+TPM to volunteers; immutable logs allow third-party review.</li>
+          <li><strong>Trust Metrics Review:</strong> Measure consent-revocation speed, explanation clarity, deletion completeness.</li>
+          <li><strong>Governed Roll-out:</strong> Scale only when trust metrics meet agreed thresholds.</li>
+        </ul>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Ethical Safeguards & Overrides</h3>
+        <ul class="mb-6 space-y-2">
+          <li><strong>Role-Based Views:</strong> Managers see team horizon width, never individual biometrics.</li>
+          <li><strong>Emergency Override:</strong> Time-limited, dual-confirmation switch; creates non-erasable audit trail.</li>
+          <li><strong>Bias Audit Loop:</strong> External reviewers test reflections across cultures and neurotypes.</li>
+        </ul>
+        <h3 class="font-bold text-2xl mt-8 mb-4">Conclusion</h3>
+        <p class="mb-6">
+          Augmentation should expand the self, not edit it. By intertwining Personal Cognitive Computing, EchoX, and Time Perception Mirroring, Cosmo Lab converts abstract rights into live reflexes—pause, inspect, erase—available at any moment. If your organisation seeks technology that amplifies without annexing, let's design sovereignty together.
         </p>
       `
     }

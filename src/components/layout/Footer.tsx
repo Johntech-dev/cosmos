@@ -69,7 +69,7 @@ const Footer = () => {
         <div className="border-t border-gray-700 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400 mb-4 md:mb-0">
-               Cosmo Lab  powered by Fourth Gate LLE, All rights reserved &copy; {new Date().getFullYear()}
+               Cosmo Lab  powered by  Fourth Gate FZ LLE, All rights reserved &copy; {new Date().getFullYear()}
             </p>
             <div className="flex space-x-6 text-sm text-gray-400">
               <Link to="/privacy-policy" className="hover:text-cosmo-blue-light transition-colors">Privacy Policy</Link>

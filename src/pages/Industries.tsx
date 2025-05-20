@@ -37,7 +37,7 @@ const Industries = () => {
                 and protect critical information while ensuring the highest standards of accountability and transparency.</p>
               </>
             }
-            imageUrl="/AdobeStock_800182196.jpeg"
+            imageUrl="/AdobeStock_1028317895.jpeg"
             imageAlt="Government & Public Sector"
           >
             <div className="space-y-4 mb-6">
@@ -190,7 +190,7 @@ const Industries = () => {
                   that foster innovation while reducing burnout.</p>
                 </>
               }
-              imageUrl="/AdobeStock_1028317895.jpeg"
+              imageUrl="/coperate.jpeg"
               imageAlt="Corporate Innovation"
               reverse={true}
             >
