@@ -47,7 +47,7 @@ const TermsOfService = () => {
                 <h2 className="text-3xl font-bold text-gray-900">Introduction & Acceptance</h2>
               </div>
               <p className="text-lg text-gray-700 leading-relaxed">
-                Welcome to Cosmo Lab. By accessing or using our website, you agree to these Terms of Use, which form a legally binding agreement between you and Fourth Gate LLE. If you do not agree to these terms, you must not use our website.
+                Welcome to Cosmo Lab. By accessing or using our website, you agree to these Terms of Use, which form a legally binding agreement between you and Fourth Gate FZ LLE. If you do not agree to these terms, you must not use our website.
               </p>
             </AnimatedSection>
           </div>
