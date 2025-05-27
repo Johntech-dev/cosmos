@@ -65,7 +65,7 @@ const Solutions = () => {
               <>
                 <p className="mb-4">Our flagship echoX Platform delivers real-time cognitive dashboards with HRV-driven feedback,
                 adapting to your team's natural rhythms and enhancing their decision-making capabilities.</p>
-                <p>The AI co-pilot surfaces strategic options without overriding human judgment, ensuring
+                <p>The IA co-pilot surfaces strategic options without overriding human judgment, ensuring
                 that human expertise remains at the center of critical decisions while benefiting from
                 machine-assisted insights.</p>
               </>
