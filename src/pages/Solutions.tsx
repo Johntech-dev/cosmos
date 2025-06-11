@@ -26,6 +26,99 @@ const Solutions = () => {
         description="Discover our innovative technologies that amplify human intelligence and synchronize human-machine interaction."
       />
 
+      <section className="bg-gradient-to-b from-white to-gray-50 py-20">
+        <div className="container mx-auto px-4 md:px-6">
+          <AnimatedSection className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-6">
+              <span className="text-cosmo-blue">Featured Service</span>
+            </h2>
+          </AnimatedSection>
+
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-white rounded-xl shadow-lg p-8 md:p-12">
+              <h3 className="text-2xl md:text-3xl font-bold mb-6 text-cosmo-blue">
+                Cognitive Systems Readiness
+              </h3>
+              <h4 className="text-xl font-semibold mb-4 text-gray-800">
+                Strategic Advisory for Human-Centric Adaptation
+              </h4>
+              
+              <div className="space-y-6 text-gray-700">
+                <p>
+                  Cosmo Lab offers a specialized consulting service for public institutions and enterprise organizations 
+                  preparing to navigate the next phase of technological governance—where adaptive systems, biometric data, 
+                  and human-machine integration are no longer optional, but inevitable.
+                </p>
+                <p>
+                  This engagement ensures leadership, operations, and compliance teams are aligned with the emergent legal, 
+                  ethical, and scientific standards surrounding Individual Behavioral Biometric Data (IBBD) and 
+                  intelligence-amplifying systems.
+                </p>
+
+                <div className="bg-gray-50 rounded-lg p-6">
+                  <h5 className="text-lg font-semibold mb-4 text-cosmo-blue">Key Outcomes:</h5>
+                  <ul className="space-y-3">
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 mr-3">
+                        <div className="w-6 h-6 rounded-full bg-cosmo-blue/20 flex items-center justify-center">
+                          <ArrowRight className="h-3.5 w-3.5 text-cosmo-blue" />
+                        </div>
+                      </div>
+                      <span>Grounding institutional strategy in the science of cognitive feedback systems and neuroadaptive design</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 mr-3">
+                        <div className="w-6 h-6 rounded-full bg-cosmo-blue/20 flex items-center justify-center">
+                          <ArrowRight className="h-3.5 w-3.5 text-cosmo-blue" />
+                        </div>
+                      </div>
+                      <span>Preparing cultural, legal, and decision-making frameworks for recursive governance</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 mr-3">
+                        <div className="w-6 h-6 rounded-full bg-cosmo-blue/20 flex items-center justify-center">
+                          <ArrowRight className="h-3.5 w-3.5 text-cosmo-blue" />
+                        </div>
+                      </div>
+                      <span>Aligning data policy with emerging rights-based biometric frameworks</span>
+                    </li>
+                    <li className="flex items-start">
+                      <div className="flex-shrink-0 mr-3">
+                        <div className="w-6 h-6 rounded-full bg-cosmo-blue/20 flex items-center justify-center">
+                          <ArrowRight className="h-3.5 w-3.5 text-cosmo-blue" />
+                        </div>
+                      </div>
+                      <span>Shifting from automation-first to adaptive literacy-first operations</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <p className="italic text-gray-600">
+                  Rather than accelerating blindly into technological adoption, this service helps institutions install 
+                  the reflexive awareness needed to engage in co-regulation with intelligent systems—while maintaining 
+                  human agency, legal integrity, and systemic coherence.
+                </p>
+                <p className="font-semibold text-gray-800">
+                  This is not transformation at scale. It is stewardship at depth.
+                </p>
+              </div>
+
+              <div className="mt-8">
+                <Button 
+                  asChild
+                  className="bg-cosmo-blue hover:bg-cosmo-blue-dark text-white inline-flex items-center group"
+                >
+                  <a href="/contact">
+                    Learn More About This Service
+                    <ArrowRight className="ml-2 h-4 w-4 transform group-hover:translate-x-1 transition-transform" />
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div id="content" className="pt-10">
         {/* Quick Navigation */}
         <section className="container mx-auto px-4 md:px-6 py-6">
