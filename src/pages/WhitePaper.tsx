@@ -91,6 +91,90 @@ const WhitePaper = () => {
                     </Button>
                   </div>
                 </div>
+
+                {/* AI-Energy Disparity Crisis in America */}
+                <div className="group border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <div className="inline-flex items-center gap-2 text-xs font-medium text-cosmo-blue bg-cosmo-blue/10 px-2.5 py-1 rounded-full mb-3">PDF</div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">AI-Energy Disparity Crisis in America</h3>
+                      <p className="text-gray-600 mb-4">
+                        An analysis of the energy consumption disparities in AI infrastructure across America, examining the environmental and social implications of artificial intelligence deployment and proposing sustainable pathways for technological advancement.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3">
+                    <Button asChild className="bg-cosmo-blue hover:bg-cosmo-blue-light text-white">
+                      <a href="/AI-Energy Disparity Crisis in America.pdf" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View PDF
+                      </a>
+                    </Button>
+                    <Button asChild variant="outline" className="border-cosmo-blue text-cosmo-blue">
+                      <a href="/AI-Energy Disparity Crisis in America.pdf" download>
+                        <Download className="w-4 h-4 mr-2" />
+                        Download
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+
+                {/* AI Surveillance From Slavery to ICE */}
+                <div className="group border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <div className="inline-flex items-center gap-2 text-xs font-medium text-cosmo-blue bg-cosmo-blue/10 px-2.5 py-1 rounded-full mb-3">PDF</div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">AI Surveillance From Slavery to ICE</h3>
+                      <p className="text-gray-600 mb-4">
+                        A historical and contemporary examination of surveillance technologies, tracing their evolution from historical systems of control to modern immigration enforcement, and analyzing the implications for civil liberties and human rights.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3">
+                    <Button asChild className="bg-cosmo-blue hover:bg-cosmo-blue-light text-white">
+                      <a href="/AI Surveillance From Slavery to ICE.pdf" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View PDF
+                      </a>
+                    </Button>
+                    <Button asChild variant="outline" className="border-cosmo-blue text-cosmo-blue">
+                      <a href="/AI Surveillance From Slavery to ICE.pdf" download>
+                        <Download className="w-4 h-4 mr-2" />
+                        Download
+                      </a>
+                    </Button>
+                  </div>
+                </div>
+
+                {/* AI (Etic Product) vs. Intelligence Amplification (Emic Practice) */}
+                <div className="group border border-gray-100 rounded-xl p-6 hover:shadow-lg transition-shadow">
+                  <div className="flex items-start justify-between gap-6">
+                    <div>
+                      <div className="inline-flex items-center gap-2 text-xs font-medium text-cosmo-blue bg-cosmo-blue/10 px-2.5 py-1 rounded-full mb-3">PDF</div>
+                      <h3 className="text-xl font-semibold text-gray-900 mb-2">AI (Etic Product) vs. Intelligence Amplification (Emic Practice)</h3>
+                      <p className="text-gray-600 mb-4">
+                        Implications for Human Sovereignty and Cybernetic Ecology. A philosophical exploration of artificial intelligence as external product versus intelligence amplification as internal practice, examining implications for human autonomy and the future of human-machine symbiosis.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex flex-wrap gap-3">
+                    <Button asChild className="bg-cosmo-blue hover:bg-cosmo-blue-light text-white">
+                      <a href="/AI (Etic Product) vs. Intelligence Amplification (Emic Practice) Implications for Human Sovereignty and Cybernetic Ecology.pdf" target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="w-4 h-4 mr-2" />
+                        View PDF
+                      </a>
+                    </Button>
+                    <Button asChild variant="outline" className="border-cosmo-blue text-cosmo-blue">
+                      <a href="/AI (Etic Product) vs. Intelligence Amplification (Emic Practice) Implications for Human Sovereignty and Cybernetic Ecology.pdf" download>
+                        <Download className="w-4 h-4 mr-2" />
+                        Download
+                      </a>
+                    </Button>
+                  </div>
+                </div>
               </div>
             </AnimatedSection>
           </div>
